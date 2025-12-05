@@ -80,7 +80,7 @@ Beberapa tantangan utama yang muncul antara lain:
     operasi tanggap darurat dengan lebih cepat.    
     \item Terbatasnya pemahaman terstruktur tentang faktor penyebab. \\
     Bagi pemangku kepentingan, pertanyaan yang diajukan sebelum mengambil keputusan bukan hanya tentang "di mana risiko tertinggi saat ini",
-    tetapi juga "mengapa wilayah tersebut memiliki risiko yang tinggi". Saat ini, hubungan antara faktor-faktor penyebab karhutla sering Kalimantan
+    tetapi juga "mengapa wilayah tersebut memiliki risiko yang tinggi". Saat ini, hubungan antara faktor-faktor penyebab karhutla sering kali
     dianalisis secara terpisah. Hal tersebut akan menghambat pemangku kepentingan dalam melakukan penyusunan keputusan strategi mitigasi karhutla.
     \item Langkah penguatan operasi yang belum optimal. \\
     Untuk meningkatkan langkah operasional dalam mengendalikan bencana karhutla, pemenuhan suber daya sering kali menjadi tantangan dalam hal ini. 
@@ -121,7 +121,7 @@ harus mampu untuk memberikan fitur yang dapat membantu mengatasi permasalahan. K
   \label{tbl:kebutuhan-fungsional}
 \end{table}
 
-\subsection{Kebutuhan Non-funsional}
+\subsection{Kebutuhan Non-fungsional}
 Kebutuhan non-fungsional tidak berbicara tentang "apa yang dilakukan" sistem, melainkan bagaimana karakteristik sistem tersebut agar relevan dengan konteks pengendalian karhutla di Indonesia. 
 Dengan menganalisis kebutuhan non-fungsional dari sistem, pengetahuan terhadap kelayakan teknis dapat dipahami untuk pengembangan yang relevan. Berikut hasil analisis kebutuhan 
 non-fungsional pada permasalahan terkait.
@@ -140,14 +140,14 @@ non-fungsional tersebut disajikan pada Tabel~\ref{tbl:kebutuhan-nonfungsional}.
     NF1 & Akurasi Model &
     Model analisis/prediksi risiko karhutla yang digunakan dalam sistem
     harus mencapai tingkat kinerja yang dapat diterima, dengan nilai
-    AUC (Area Under Curve) pada data uji minimal.
-    $\geq 0{,}80$. \\ \hline
+    \textit{accuracy} mencapai 0,80 dan \textit{F1-score} pada kelas
+    risiko tinggi adalah 0,75. \\ \hline
 
     NF2 & Keandalan &
    Sistem mampu memberikan hasil deteksi atau analisis risiko karhutla
     yang konsisten dan dapat dipercaya, disertai bentuk keluaran yang jelas
     (misalnya kelas risiko atau skor risiko) sehingga tidak menimbulkan
-    ambiguitas  \\ \hline
+    ambiguitas.  \\ \hline
 
     NF3 & Kemudahan penggunaan &
     Sistem harus disajikan dalam bentuk yang mudah dipahami

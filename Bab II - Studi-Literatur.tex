@@ -103,7 +103,7 @@ pengelola karhutla dalam menetapkan langkah mitigasi.
 \end{figure}
 
 
-\textit{Artificial intelligence}, \textit{machine learning} (ML), dan \textit{deep learning} (DL)
+\textit{Artificial Intelligence}, \textit{Machine Learning} (ML), dan \textit{Deep Learning} (DL)
 saling berkaitan secara hierarkis seperti yang ditunjukkan pada Gambar \ref{gambar:hierarki-AI} dan berinteraksi dalam membangun sistem perangkat lunak
 yang cerdas. Menurut \textcite{Sarker2022}, ML dan DL merupakan bagian dari teknologi AI yang
 berfokus pada pembelajaran berbasis data untuk mengembangkan sistem cerdas dan
@@ -164,7 +164,7 @@ Model ini lebih relevan untuk digunakan pada sistem kontrol atau penjadwalan din
     Klasifikasi, Kontrol \\
     \hline
   \end{tabular}
-  \caption{Kategori \textit{machine learning} \autocite{Sarker2022}}
+  \caption{Kategori \textit{Machine Learning} \autocite{Sarker2022}}
   \label{tbl:tipe-pembelajaran-ml}
 \end{table}
 
@@ -235,13 +235,13 @@ prediksi XGBoost untuk contoh ke-$i$ sebagai penjumlahan keluaran dari $big(K)$ 
 F_k(x) = F_0(x) + \varepsilon T_1(x) + \varepsilon T_2(x) + \dots + \varepsilon T_k(x)\
 \label{eq:xgboost-formula}
 \end{equation}
-Pada Persamaan~\ref{eq:xgboost-boost}, $F_0(x)$ biasanya berupa model awal 
+Pada Persamaan~\ref{eq:xgboost-formula}, $F_0(x)$ biasanya berupa model awal 
 sederhana (misalnya nilai rata-rata), $T_m(x)$ merepresentasikan pohon regresi 
 pada iterasi ke-$m$, dan $\varepsilon$ adalah \textit{learning rate} yang 
 mengendalikan besar langkah pembaruan model. Hal ini sesuai dengan pendapat \textcite{Sarker2021} bahwa gradien yang digunakan pada XGBoost berguna
 untuk meminimalkan fungsi kerugian yang serupa dengan cara kerja jaringan saraf tiruan (\textit{Artificial Neural Network}).
 \section{Metrik Evaluasi}
-Dalam pengembangan model \textit{machine learning} untuk melakukan prediksi, langkah evaluasi sangat diperlukan untuk menilai apakah model
+Dalam pengembangan model \textit{Machine Learning} untuk melakukan prediksi, langkah evaluasi sangat diperlukan untuk menilai apakah model
 memiliki kemampuan yang cukup untuk memprediksi label. Langkah untuk melakukan evaluasi tersebut dapat menggunakan metrik evaluasi 
 untuk melihat kinerja dan performa model. Jenis metrik evaluasi yang dapat digunakan sebagai bahan evaluatif berbeda-beda setiap modelnya dengan
 mempertimbangkan sifat data, jenis tugas, dan kebutuhan interpretasi. Berdasarkan penjelasan dari \textcite{Miller2024}, metrik evaluasi dikelompokkan
@@ -382,8 +382,8 @@ menjelaskan bahwa pemahaman di balik keputusan atau prediksi model dibedakan men
 Selain itu, XAI juga bersifat \textit{post-hoc} yang artinya penjelasan dihasilkan setelah model selesai dilatih
 dan \textit{model-agnostic} yang artinya XAI dapat diterapkan pada berbagai jenis model tanpa mengubah struktur internalnya.
 \subsection{SHAP}
-SHAP (\textit{SHapley Additive Explanations}) merupakan salah satu metode XAI yang paling populer untuk menjelaskan prediksi model \textit{machine learning}. Sebagai contoh,
-pada penelitian \textcite{Abdollahi2023}, penggunaan SHAP yang dikombinasikan dengan \textit{machine learning} dapat menghasilkan sebuah pemetaan kerentanan kebakaran hutan. Penelitian
+SHAP (\textit{SHapley Additive Explanations}) merupakan salah satu metode XAI yang paling populer untuk menjelaskan prediksi model ML. Sebagai contoh,
+pada penelitian \textcite{Abdollahi2023}, penggunaan SHAP yang dikombinasikan dengan ML dapat menghasilkan sebuah pemetaan kerentanan kebakaran hutan. Penelitian
 tersebut menunjukkan adanya faktor-faktor seperti kelembapan, kemiringan lereng, dan kondisi vegetasi yang disebutkan sebagai kontributor terbesar berdasarkan skor kerentanan kebakaran.
 \textcite{Lundberg2017} memperkenalkan SHAP sebagai kerangka terstruktur untuk mengetahui \textit{feature importance} yang memanfaatkan konsep nilai Shapley.
 Dalam kerangka ini, setiap fitur dianggap sebagai "pemain" yang berkontribusi terhadap hasil nilai prediksi model. Pendapat tersebut diperkuat oleh \textcite{Bifarin2023} yang menyatakan SHAP 
@@ -424,7 +424,7 @@ diacak sehingga hubungan antara fitur dan label menjadi rusak.
 \textcite{Fumagalli2023} menyebut PFI sebagai ukuran 
 \textit{model-agnostic} yang telah mapan untuk memperoleh 
 \textit{global feature importance} pada berbagai jenis model 
-\textit{machine learning}.
+ML.
 
 Langkah yang dilakukan oleh PFI untuk satu fitur adalah:
 \begin{enumerate}
@@ -468,7 +468,7 @@ data geospasial sehingga analisis dapat dilakukan untuk melihat deret waktu area
 Untuk memahami lebih dalam terkait permasalahan, studi dilakukan untuk mencari penelitian yang membahas permasalahan dan mencoba memahami langkah solutif
 yang telah di uji coba sebagai percobaan penyelesaian masalah. Penelitian yang dilakukan oleh \textcite{Karurung2025} menjelaskan tentang 
 kebakaran hutan yang berlokasi di Indonesia dengan fokus pada variasi musiman. Wilayah studi yang dilakukan meliputi provinsi Kalimantan, Sumatra, dan
-Papua. Mereka mengembangkan sebuah algoritma \textit{machine learning} termasuk RF dan XGBoost dari lima belas faktor kerentanan, seperti 
+Papua. Mereka mengembangkan sebuah algoritma ML termasuk RF dan XGBoost dari lima belas faktor kerentanan, seperti 
 curah hujan, suhu, kelembapan, indeks vegetasi, topografi, jarak permukiman, hingga keberadaan lahan gambut. Prediksi yang dilakukan berfokus pada
 pemetaan tingkat kerentanan kebakaran pada tiga kondisi musim, yaitu hujan, kering, dan gabungan. Hasilnya menunjukkan bahwa model berbasis \textit{ensemble tree}
 mampu mencapai akurasi tinggi dengan nilai AUC di atas 0,9 dan mengungkap bahwa pengaruh faktor lingkungan seperti curah hujan dan kelembapan menjadi dominan.
@@ -482,12 +482,12 @@ kebakaran berbasis penginderaan jauh (\textit{remote sensing}).
 
 Studi dari \textcite{Abdollahi2023} memberikan pandangan lain tentang prediksi kerentanan kebakaran hutan dengan memberikan pendekatan XAI untuk memberikan penjelasan
 dari hasil prediksi. Wilayah studi yang dilakukan berada di Gippsland, Victoria (Australia) dengan menggunakan serangkaian faktor pemicu kebakaran seperti curah hujan, suhu, 
-dan topografi. Mereka menggunakan model \textit{deep learning} untuk memprediksi kerentanan kebakaran hutan lalu menerapkan metode SHAP untuk menafsirkan kontribusi masing-masing
+dan topografi. Mereka menggunakan model DL untuk memprediksi kerentanan kebakaran hutan lalu menerapkan metode SHAP untuk menafsirkan kontribusi masing-masing
 faktor.  Hasil yang diberikan SHAP mampu menunjukkan fitur-fitur kunci yang mendorong peningkatan kerentanan kebakaran seperti kelembapan, kemiringan lereng, dan jarak ke jalan.
 Pendekatan ini memperlihatkan bagaimana XAI dapat mengatasi kasus "\textit{black box}" dalam menjelaskan hasil yang diberikan oleh model prediksi.
 
 Secara keseluruhan, ketiga penelitian tersebut memberikan gambaran penerapan
-\textit{machine learning} dan XAI pada kasus kebakaran hutan dan lahan. Namun,
+ML dan XAI pada kasus kebakaran hutan dan lahan. Namun,
 eksplorasi pemanfaatan ML dan XAI untuk kebakaran hutan di Asia Tenggara,
 khususnya Indonesia, masih relatif terbatas. Integrasi berbagai langkah solutif
 seperti pemodelan kerentanan berbasis \textit{ensemble tree}, pemanfaatan berbagai
