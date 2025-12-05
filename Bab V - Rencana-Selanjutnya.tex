@@ -3,7 +3,7 @@
 % ==========================================
 \chapter{RENCANA SELANJUTNYA}
 \section{Rencana implementasi}
-Mengacu pada metodologi CRISP-DM yang telah dijelaskan pada Bab 1, rencana implementasi akan dilakukan dengan mengiktui
+Mengacu pada metodologi CRISP-DM yang telah dijelaskan pada Bab I, rencana implementasi akan dilakukan dengan mengikuti
 langkah-langkah yang terdapat pada metodologi ini. Selain itu, penjelasan seperti lingkungan pengembangan disertai 
 alat-alat yang digunakan juga dibahas pada bagian ini. Untuk memberikan bayangan implementasi, diagram alur pengembangan dan 
 linimasa disusun pada bagian ini.
@@ -19,7 +19,7 @@ Alur keseluruhan implementasi digambarkan pada Gambar \ref{gambar:diagram-implem
 implementasi dirancang dengan mengikuti metodologi yang telah dibahas sebelumnya. Setiap blok merepresentasikan 
 satu kelompok kegiatan utama yang akan dikerjakan selama tugas akhir.
 \begin{enumerate}
-    \item \textit{Data Collection} \\
+    \item \textit{Data Collecting} \\
     Tahap ini sebenarnya sempat dilakukan pada pengembangan proposal tugas akhir dan mendapatkan data \textit{hotspot} dari VIIRS. Namun, 
     disebabkan hasil studi literatur sebelumnya menemukan bahwa bencana karhutla dapat diidentifikasi lewat berbagai faktor, tahap ini 
     dilakukan kembali sebagai lanjutan dari langkah \textit{data understanding} yang telah dilakukan pada Bab III. Data \textit{hotspot} akan
@@ -31,7 +31,7 @@ satu kelompok kegiatan utama yang akan dikerjakan selama tugas akhir.
     dan korelasinya dengan faktor penyebab karhutla berdasarkan studi literatur sebelumnya. Kegiatan ini memastikan bahwa data yang masuk ke tahap berikutnya 
     memang relevan dengan tujuan pemodelan.
     \item \textit{Data Preparation} \\
-    Pada tahap ini, data akan disiapkan agar dapat menjadi data yang bersih untuk dijadikan bahan \textit{training} oleh model prediktif. Output pada tahap ini adalah \textit{dataset} tabular yang terstruktur per kombinasi \textit{grid} dalam kurun waktu bulan dan siap untuk digunakan pada tahap
+    Pada tahap ini, data akan disiapkan agar dapat menjadi data yang bersih untuk dijadikan bahan \textit{training} oleh model prediktif. Output pada tahap ini adalah \textit{dataset} tabular yang terstruktur per kombinasi \textit{grid} dalam kurun waktu bulanan dan siap untuk digunakan pada tahap
     pemodelan. Kegiatan \textit{data preparation} meliputi:
     \begin{enumerate}
         \item \textit{Data cleaning} dan \textit{filtering} merupakan langkah untuk menangani \textit{missing value}, kesalahan pencatatan, data duplikasi,
@@ -42,7 +42,7 @@ satu kelompok kegiatan utama yang akan dikerjakan selama tugas akhir.
         \item \textit{Data transformation} merupakan langkah untuk melakukan transformasi data yang diperlukan (normalisasi, pengkodean variabel kategorik, dan lainnya).
         \item \textit{Feature engineering and selection} merupakan langkah untuk melakukan pemrosesan fitur seperti pemanfaatan fitur FWI yang dikonversi menjadi bulanan dan memilih fitur
         mana yang paling berkorelasi dengan label agar dapat menghilangkan fitur yang menjadi \textit{noise}. Pada langkah ini juga dilakukan pemrosesan terhadap label data yaitu data \textit{hotspot}
-        sehingga memiliki tiga kelas risiko (rendah, sendang, dan tinggi) berdasarkan \textit{threshold} yang akan ditentukan.
+        sehingga memiliki tiga kelas risiko (rendah, sedang, dan tinggi) berdasarkan \textit{threshold} yang akan ditentukan.
         \item \textit{Class balancing} merupakan langkah untuk melakukan penyeimbangan data agar distribusi kelas tidak timpang ke salah satu kelas. Hal ini dilakukan agar model
         tidak terlalu bias terhadap kelas mayoritas.
     \end{enumerate}
@@ -203,7 +203,7 @@ Verifikasi yang dilakukan untuk XAI adalah dengan menyusun beberapa pertanyaan a
 
 Untuk memberikan verifikasi, sebenarnya pertanyaan yang diberikan dapat melebihi jumlah kedua pertanyaan di atas. Jadi kedua pertanyaan tersebut merupakan contoh gambaran tentang bagaimana melakukan verifikasi terhadap XAI.
 Dengan memberikan pertanyaan tersebut, apabila XAI dapat memberikan penjelasan yang dapat menjawab pertanyaan tersebut, verifikasi terhadap XAI dapat dinyatakan berhasil.
-Hal ini karena XAI berhasil menjadi penjelas dari kondisi \textit{blackbox} yang dialami oleh model dan dapat membantu pemangku kepentingan dalam memahami kondisi 
+Hal ini karena XAI berhasil menjadi penjelas dari kondisi \textit{black box} yang dialami oleh model dan dapat membantu pemangku kepentingan dalam memahami kondisi 
 dan mengambil keputusan.
 \subsection{Validasi Model Prediksi dan XAI}
 

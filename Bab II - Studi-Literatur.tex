@@ -36,7 +36,7 @@ ENSO sendiri memiliki dua fase yang mempengaruhi kondisi iklim lingkungan.
   dan vegetasi menciptakan kondisi lingkungan yang sangat kondusif bagi penyebaran api yang cepat dan luas.
   \item La Niña: Sebaliknya, La Niña membawa kondisi yang lebih basah  ke Indonesia, yang secara efektif 
   menekan aktivitas kebakaran dan mengurangi jumlah \textit{hotspot} tahunan \autocite{syahid2022}. Siklus ENSO 
-  ini menjelaskan mengapa intensitas Karhutla di Indonesia sangat berfluktuasi dari tahun ke tahun.
+  ini menjelaskan mengapa intensitas karhutla di Indonesia sangat berfluktuasi dari tahun ke tahun.
 \end{enumerate}
 
 \subsection{Faktor Antropogenik}
@@ -51,7 +51,7 @@ menegaskan bahwa faktor sosial dan tata kelola lahan berkontribusi besar terhada
 Faktor biofisik berkaitan dengan karakteristik fisik dan wilayah ekologis yang memengaruhi kerentanan suatu area terhadap kebakaran. 
 Beberapa faktor utama yang banyak dibahas dalam literatur antara lain keberadaan lahan gambut, jenis tutupan lahan (vegetasi), dan topografi. 
 \textcite{Rossita2023} menunjukkan bahwa gambut mencakup sekitar 8\% dari luas daratan Indonesia, dan analisis mereka di satu kesatuan hidrologis gambut 
-di Riau menemukan tren peningkatan luas gambut terbakar antara 2001-2020, dengan sekitar 33\% area yang terbakar mengalami kebakaran berulang. 
+di Riau menemukan tren peningkatan luas gambut terbakar antara 2001--2020, dengan sekitar 33\% area yang terbakar mengalami kebakaran berulang. 
 Hal ini mengindikasikan perangkap degradasi, di mana lahan yang pernah terbakar menjadi semakin rentan untuk terbakar kembali pada tahun-tahun berikutnya.
 
 \section{Indeks Cuaca Kebakaran}
@@ -181,21 +181,21 @@ D = \{(x_1, y_1), (x_2, y_2), ..., (x_n,y_n)\}
 \label{eq:himpunan-data-supervised-learning}
 \end{equation}
 
-Pada Persamaan \ref{eq:himpunan-data-supervised-learning}, $x_i \in \mathbb{R}^d$ merupakan vektor fitur untuk contoh ke ke-$i$, dan $y_i$ yang merupakan label atau nilai
+Pada Persamaan \ref{eq:himpunan-data-supervised-learning}, $x_i \in \mathbb{R}^d$ merupakan vektor fitur untuk contoh ke-$i$, dan $y_i$ yang merupakan label atau nilai
 target yang bersesuaian. Pada \textit{supervised learning}, kesalahan yang dimiliki model akan menjadi hukuman dan semakin besar kesalahannya akan semakin
 besar hukumannya. Jadi, tugas utama \textit{supervised learning} adalah memilih suatu model ($f(x;\theta)$) dan kemudian mencari parameter
-$theta$ yang membuat hasil model dapat sedekat mungkin dengan label yang benar.
+$\theta$ yang membuat hasil model dapat sedekat mungkin dengan label yang benar.
 Untuk menilai seberapa bagus model tersebut, terdapat fungsi kerugian yang dapat mengukur seberapa jauh prediksi dari label sebenarnya.
 \begin{equation}
 R^{(\theta)} = \frac{1}{n} \sum_{i=1}^{n} L\!\left( y_i,\, f(x_i;\theta) \right)
 \label{eq:empirical-risk}
 \end{equation}
-Rata-rata kerugian pada seluruh data latih (\textit{empirical risk}) dinyatakan pada Persamaan \ref{eq:empirical-risk}. Secara konsep, proses pelatihan model \textit{supervised learning} dapat dipahami sebagai upaya pencarian nilai $theta$ yang dapat meminimalkan
+Rata-rata kerugian pada seluruh data latih (\textit{empirical risk}) dinyatakan pada Persamaan \ref{eq:empirical-risk}. Secara konsep, proses pelatihan model \textit{supervised learning} dapat dipahami sebagai upaya pencarian nilai $\theta$ yang dapat meminimalkan
 kerugian rata-rata.
 \subsection{\textit{Linear Regression}}
 \textit{Linear regression} (LR) adalah contoh paling sederhana dan klasik dari model \textit{supervised learning}. Model ini
 menggambarkan hubungan antara sekumpulan fitur dan suatu nilai keluaran secara kontinu dengan menggambar garis lurus
-(untuk satu fitur) atau bidang (untuk banyak fitur). Pada Persamaan \ref{eq:linear-regression-formula}, $\beta_0$ merupakan titik potong dengan sumbu vertikal dan setiap $beta_j$ menunjukkan 
+(untuk satu fitur) atau bidang (untuk banyak fitur). Pada Persamaan \ref{eq:linear-regression-formula}, $\beta_0$ merupakan titik potong dengan sumbu vertikal dan setiap $\beta_j$ menunjukkan 
 seberapa besar kontribusi suatu fitur $x_j$ terhadap perubahan nilai \textit{output} $y$. Istilah 
 $\varepsilon$ digunakan sebagai galat karena terdapat variasi yang bisa saja tidak bisa dijelaskan oleh kombinasi
 linier dari fitur-fitur tersebut.
@@ -230,7 +230,7 @@ dimanfaatkan sebagai awal bagi analisis \textit{explainable AI} yang lebih menda
 XGBoost (\textit{Extreme Gradient Boosting}) merupakan algoritma \textit{gradient boosting} berbasis pohon keputusan yang banyak digunakan
 dalam studi prediksi karena menggabungkan kinerja prediksi yang tinggi dengan efisiensi komputasi serta mampu menangani data dalam skala besar.
 Berbeda dengan RF, XGBoost menyusun pohon secara bertahap untuk memperbaiki kesalahan model sebelumnya. \textcite{Wiens2025} menyebutkan persamaan
-prediksi XGBoost untuk contoh ke-$i$ sebagai penjumlahan keluaran dari $big(K)$ pohon sebagai berikut.
+prediksi XGBoost untuk contoh ke-$i$ sebagai penjumlahan keluaran dari $K$ pohon sebagai berikut.
 \begin{equation}
 F_k(x) = F_0(x) + \varepsilon T_1(x) + \varepsilon T_2(x) + \dots + \varepsilon T_k(x)\
 \label{eq:xgboost-formula}
@@ -276,25 +276,25 @@ Empat kategori tersebut, dapat memberikan wawasan dan diturunkan menjadi beberap
   \label{eq:accuracy-formula}
   \end{equation}
 
-  \item Precision: proporsi prediksi positif yang benar-benar positif
+  \item \textit{Precision}: proporsi prediksi positif yang benar-benar positif
   \begin{equation}
   \text{Precision} = \frac{TP}{TP + FP}
   \label{eq:precision-formula}
   \end{equation}
 
-  \item Recall (Sensitivity): kemampuan model menemukan seluruh kelas positif
+  \item \textit{Recall} (\textit{Sensitivity}): kemampuan model menemukan seluruh kelas positif
   \begin{equation}
   \text{Recall} = \frac{TP}{TP + FN}
   \label{eq:recall-formula}
   \end{equation}
 
-  \item F1-Score: rata-rata harmonik dari precision dan recall
+  \item \textit{F1-Score}: rata-rata harmonik dari precision dan recall
   \begin{equation}
   \text{F1\text{-}Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
   \label{eq:f1-formula}
   \end{equation}
 
-  \item Specificity: kemampuan model mengidentifikasi kelas negatif dengan benar
+  \item \textit{Specificity}: kemampuan model mengidentifikasi kelas negatif dengan benar
   \begin{equation}
   \text{Specificity} = \frac{TN}{TN + FP}
   \label{eq:specificity-formula}
@@ -330,7 +330,7 @@ sebagai berikut.
 AUC dijelaskan sebagai luas area bawah kurva ROC yang apabila nilainya mendekati 1 model menunjukkan kemampuan pemisahan kelas dengan sangat baik.
 Namun, menurut \textcite{Lavazza2025}, sebenarnya baik ROC maupun AUC secara konseptual dikembangkan untuk klasifikasi biner karena keduanya bergantung langsung pada
 definisi dua kelas (positif dan negatif) melalui TPR dan FPR. Meskipun dapat diperluas menjadi multikelas, interpretasinya kurang
-representif dibandingkan situasi biner. Selain itu AUC sering kali terlalu optimis pada dataset yang tidak seimbang sehingga diperlukan
+representatif dibandingkan situasi biner. Selain itu, AUC sering kali terlalu optimis pada dataset yang tidak seimbang sehingga diperlukan
 untuk melakukan kombinasi metrik dalam melihat performa model. Hal ini selaras dengan penelitian yang dilakukan oleh \textcite{Karurung2025} maupun 
 \textcite{Abdollahi2023} karena keduanya mengombinasikan AUC dengan metrik evaluasi lainnya.
 
@@ -349,7 +349,7 @@ kuadrat antara prediksi dan observasi lebih rendah. Salah satu metrik lainnya ya
 \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| \hat{y}_i - y_i \right|.
 \label{eq:mae-formula}
 \end{equation}
-MAE mengukur kesalahan rata-rata dalam satuan yang sama dengan target. Berbeda dengan RMSE, MAE memberikan bobot yang sama pada setipa kesalahan sehingga
+MAE mengukur kesalahan rata-rata dalam satuan yang sama dengan target. Berbeda dengan RMSE, MAE memberikan bobot yang sama pada setiap kesalahan sehingga
 interpretasinya lebih langsung. Intinya, semakin kecil nilai MAE berarti prediksi model lebih bagus atau lebih dekat dengan nilai aktual.
 \section{\textit{Explainable Artificial Intelligence} (XAI)}
 Model ML seperti RF dan XGBoost sering kali mencapai akurasi tinggi dalam melakukan prediksi. Namun, seluruh model prediksi sering dianggap sebagai "\textit{black box}"
@@ -373,7 +373,7 @@ membantu menjelaskan hasil prediksi model dengan memanfaatkan informasi yang ter
 Secara umum, interpretabilitas terhadap model otomatis mendukung dua variasi, yaitu memahami keseluruhan perilaku model atau memahami satu prediksi. Literatur \textcite{Ali2023} dan \textcite{Adadi2018}
 menjelaskan bahwa pemahaman di balik keputusan atau prediksi model dibedakan menjadi dua subkelas.
 \begin{enumerate}
-  \item Interpretabilitas Global: Penjelasan global merangkup perilaku model di seluruh data. Kelas ini memudahkan pemahaman
+  \item Interpretabilitas Global: Penjelasan global merangkum perilaku model di seluruh data. Kelas ini memudahkan pemahaman
   logika suatu model serta menjadi aspek yang krusial dalam mengambil keputusan tingkat populasi (keseluruhan), seperti tren konsumsi obat-obatan atau perubahan iklim.
   Kelas ini juga dapat memahami apakah model yang dikembangkan berperilaku secara wajar atau overfit ke pola yang tidak wajar.
   \item Interpretabilitas Lokal: Penjelasan lokal berfokus pada menjelaskan alasan di balik keputusan spesifik atau prediksi tunggal (lokal). Kelas ini bermanfaat untuk 
@@ -466,7 +466,7 @@ data geospasial sehingga analisis dapat dilakukan untuk melihat deret waktu area
 
 \section{Penelitian Terkait}
 Untuk memahami lebih dalam terkait permasalahan, studi dilakukan untuk mencari penelitian yang membahas permasalahan dan mencoba memahami langkah solutif
-yang telah di uji coba sebagai percobaan penyelesaian masalah. Penelitian yang dilakukan oleh \textcite{Karurung2025} menjelaskan tentang 
+yang telah diuji coba sebagai percobaan penyelesaian masalah. Penelitian yang dilakukan oleh \textcite{Karurung2025} menjelaskan tentang 
 kebakaran hutan yang berlokasi di Indonesia dengan fokus pada variasi musiman. Wilayah studi yang dilakukan meliputi provinsi Kalimantan, Sumatra, dan
 Papua. Mereka mengembangkan sebuah algoritma ML termasuk RF dan XGBoost dari lima belas faktor kerentanan, seperti 
 curah hujan, suhu, kelembapan, indeks vegetasi, topografi, jarak permukiman, hingga keberadaan lahan gambut. Prediksi yang dilakukan berfokus pada
@@ -475,7 +475,7 @@ mampu mencapai akurasi tinggi dengan nilai AUC di atas 0,9 dan mengungkap bahwa 
 
 Studi selanjutnya dilakukan dengan melihat penelitian yang dilakukan \textcite{Chen2024} yang memanfaatkan model \textit{Support Vector Machine} (SVM), RF, dan 
 \textit{Neural Network} dalam melakukan klasifikasi area \textit{burning} dan \textit{burnt} pada tiga periode waktu (sebelum kebakaran, saat kebakaran, dan setelah kebakaran).
-Mereka menggunakan citra Sentinel-1B dan Sentinel-2A untuk mendapatkan citra di lokasi Xintian County, Tiongkok. Fitur yang digunakan merupakan kombinasi dari index vegetasi, 
+Mereka menggunakan citra Sentinel-1B dan Sentinel-2A untuk mendapatkan citra di lokasi Xintian County, Tiongkok. Fitur yang digunakan merupakan kombinasi dari indeks vegetasi, 
 parameter radar, dan kanal optik. Secara umum, model SVM menunjukkan kinerja paling baik pada fase pra-kebakaran, sedangkan RF dan \textit{Neural Network} memberikan 
 hasil yang lebih baik untuk pemetaan area yang sudah terbakar. Studi ini menegaskan bahwa pemilihan algoritma dan fitur citra sangat mempengaruhi kualitas pemetaan
 kebakaran berbasis penginderaan jauh (\textit{remote sensing}).
@@ -494,288 +494,3 @@ seperti pemodelan kerentanan berbasis \textit{ensemble tree}, pemanfaatan berbag
 \textit{raster layer} lingkungan dalam kerangka SIG, serta penerapan XAI yang
 terhubung dengan dashboard interaktif belum banyak dikaji secara terpadu. Ruang
 inilah yang akan diisi oleh tugas akhir ini.
-
-
-% \lipsum[1]
-
-% \subsection{Gambar}
-% Contoh gambar dapat dilihat pada Gambar \ref{gambar:jaringan}. Gambar dan judulnya diposisikan di tengah. Nomor gambar tidak diakhiri tanda titik. Gambar tersebut dibuat menggunakan aplikasi draw.io dan disimpan ke format PNG setelah dengan zoom setting pada angka 300\%. Ukuran gambar yang ditampilkan dapat diatur dengan mengubah nilai \textit{width} dalam sintaks \textit{includegraphics}.
-
-% \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-% 	\centering
-%   \captionsetup{justification=centering}
-%     	\includegraphics[width=0.7\textwidth]{image/gambar1.png}
-% 	\caption{Contoh gambar jaringan}
-% 	\label{gambar:jaringan}
-% \end{figure}
-
-% Gambar umumnya tidak jelas atau kabur jika gambar tersebut:
-% \begin{enumerate}[a.]
-%   \item diperoleh dari hasil cropping pada suatu halaman buku atau situs web;
-%   \item hasil pembesaran gambar yang gambar aslinya sebenarnya berukuran kecil; atau
-%   \item disimpan dalam resolusi kecil
-% \end{enumerate}
-% Ketidakjelasan gambar ini dapat dilihat pada garis-garis diagram yang tidak tegas dan tulisan-tulisan dalam gambar yang tampak kabur dan kurang jelas terbaca.
-
-% Untuk mendapatkan gambar yang tidak kabur (\textit{blur}), langkah-langkah berikut dapat digunakan:
-% \begin{enumerate}[(a)]
-% \item Gambar yang didapat di suatu pustaka atau referensi sebaiknya digambar ulang, misalnya menggunakan PowerPoint, Canva, Figma, draw.io, atau yang lainnya.
-% \item Jika diagram atau ilustrasi digambar menggunakan draw.io, saat gambar disimpan ke format PNG atau JPG (\textit{export as}), lakukan \textit{zoom} ke minimal 300\% (\textit{the default value is} 100\%). 
-% \item Jika diagram digambar dengan menggunakan PowerPoint, gambar dapat langsung di-\textit{copy-paste} ke Word.
-% \end{enumerate}
-
-% \subsection{Tabel}
-% Tabel ada dua jenis, yaitu tabel yang bisa termuat dalam satu halaman dan tabel yang sangat panjang sehingga tidak muat dalam satu halaman.
-% \subsubsection{Tabel yang Muat dalam Satu Halaman}
-% Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tabel dan judulnya dibuat rata kiri dan judul tabel diletakkan di atas tabel. Usahakan tabel dapat ditulis dalam satu halaman, tidak terpotong ke halaman berikutnya.
-
-% \begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-%   \begin{tabular}{ | p{2cm} | p{2cm} | p{3cm} |}
-% 	\hline
-% 	Nama 	& Satuan 		& Harga \\
-% 	\hline
-% 	Buku 	& Exemplar	& 25000 \\
-% 	Komputer	& Unit		& 2500000 \\
-% 	Pensil	& Buah		& 118900 \\
-% 	\hline
-% 	\end{tabular}
-% \caption{Tabel harga bahan pokok}
-% \label{tbl:harga1}
-% \end{table}
-
-
-
-% \begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-% 	\begin{tabular}{ | l | c | r | }
-% 	\hline
-% 	Nama 	& Satuan 		& Harga \\
-% 	\hline
-% 	Buku 	& Exemplar	& 25000 \\
-% 	Komputer	& Unit		& 2500000 \\
-% 	Pensil	& Buah		& 118900 \\
-% 	\hline
-% 	\end{tabular}
-% \caption{Tabel harga bahan sekunder}
-% \label{tbl:harga2}
-% \end{table}
-
-% % -- Example of importing table from external file --
-% \subsubsection{Mengimpor Tabel dari Berkas Eksternal}
-
-% Tabel \ref{tbl:harga3} diimpor dari berkas eksternal \textit{table/tabel1.tex} menggunakan perintah \textit{input}. 
-% Dengan demikian, jika tabel tersebut perlu diubah, cukup mengubah pada berkas eksternal tersebut tanpa perlu mengubah pada berkas utama ini.
-
-% \input table/tabel1.tex
-
-
-% % -- Example of long table --
-% \subsubsection{Tabel yang Sangat Panjang}
-% Jika tabel terlalu panjang sehingga tidak muat dalam satu halaman, gunakan paket 
-% \textit{longtable} untuk membuat tabel yang dapat terpotong ke halaman berikutnya, 
-% seperti pada Tabel \ref{tbl:longtable1}.
-
-% \begin{longtable}{@{\extracolsep{\fill}} l c r r}
-% \caption{Comprehensive Data Table Example}\label{tbl:longtable1} \\
-% \toprule
-% \textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
-% \midrule
-% \endfirsthead
-
-% \caption{Comprehensive Data Table Example (lanjutan)} \\
-% \toprule
-% \textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
-% \midrule
-% \endhead
-
-% \midrule
-% \multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
-% %\bottomrule
-% \endfoot
-
-% \bottomrule
-% \endlastfoot
-
-% % === Table Data ===
-% 1 & Alice Smith & 89 & 5 \\
-% 2 & Bob Johnson & 93 & 3 \\
-% 3 & Carol Davis & 95 & 2 \\
-% 4 & Daniel Wilson & 88 & 6 \\
-% 5 & Eve Thompson & 97 & 1 \\
-% 6 & Frank Brown & 85 & 7 \\
-% 7 & Grace Lee & 91 & 4 \\
-% 8 & Henry Miller & 80 & 9 \\
-% 9 & Irene Garcia & 83 & 8 \\
-% 10 & Jack Robinson & 78 & 10 \\
-% % Repeat with more rows to make it long
-% 11 & Kevin Harris & 76 & 11 \\
-% 12 & Laura Martin & 75 & 12 \\
-% 13 & Michael Clark & 74 & 13 \\
-% 14 & Natalie Lewis & 73 & 14 \\
-% 15 & Olivia Walker & 72 & 15 \\
-% 16 & Peter Hall & 71 & 16 \\
-% 17 & Quinn Allen & 70 & 17 \\
-% 18 & Rachel Young & 69 & 18 \\
-% 19 & Samuel King & 68 & 19 \\
-% 20 & Tina Wright & 67 & 20 \\
-% 21 & Uma Scott & 66 & 21 \\
-% 22 & Victor Green & 65 & 22 \\
-% 23 & Wendy Adams & 64 & 23 \\
-% 24 & Xavier Nelson & 63 & 24 \\
-% 25 & Yolanda Carter & 62 & 25 \\
-% 26 & Zachary Perez & 61 & 26 \\
-% 27 & Amelia Baker & 60 & 27 \\
-% 28 & Benjamin Rivera & 59 & 28 \\
-% 29 & Charlotte Rogers & 58 & 29 \\
-% 30 & David Murphy & 57 & 30 \\
-% 31 & Ethan Cooper & 56 & 31 \\
-% 32 & Fiona Reed & 55 & 32 \\
-% 33 & George Bailey & 54 & 33 \\
-% 34 & Hannah Cox & 53 & 34 \\
-% 35 & Isaac Howard & 52 & 35 \\
-% 36 & Julia Ward & 51 & 36 \\
-% 37 & Kyle Flores & 50 & 37 \\
-% 38 & Lily Bell & 49 & 38 \\
-% 39 & Mason Sanders & 48 & 39 \\
-% 40 & Nora Patterson & 47 & 40 \\
-% 41 & Owen Ramirez & 46 & 41 \\
-% 42 & Penelope Torres & 45 & 42 \\
-% 43 & Quentin Foster & 44 & 43 \\
-% 44 & Rebecca Gonzales & 43 & 44 \\
-% 45 & Sebastian Bryant & 42 & 45 \\
-% 46 & Taylor Alexander & 41 & 46 \\
-% 47 & Ursula Russell & 40 & 47 \\
-% 48 & Vincent Griffin & 39 & 48 \\
-% 49 & William Diaz & 38 & 49 \\
-% 50 & Zoe Simmons & 37 & 50 \\
-% % (You can easily extend this list to hundreds of rows)
-% \end{longtable}
-
-% \subsubsection{Beberapa Contoh Penulisan Rumus atau Persamaan Matematika Menggunakan LaTeX Termasuk Penomorannya}
-% Contoh rumus matematika dapat ditulis seperti pada Persamaan \ref{eq:contoh1} di bawah ini. 
-% Penomoran persamaan diletakkan di sebelah kanan, dan rumus ditulis dalam mode \textit{display math}.
-% \begin{equation}
-% E = mc^2
-% \label{eq:contoh1}
-% \end{equation}
-
-% Contoh lain penulisan rumus matematika yang lebih kompleks dapat ditulis seperti pada Persamaan \ref{eq:rumus2}.
-
-% \begin{align}
-% f(x) &= ax^2 + bx + c \\
-% f'(x) &= \frac{d}{dx}(ax^2 + bx + c) \notag \\ % tidak menampilkan nomor pada baris ini
-%       &= 2ax + b \label{eq:rumus2}
-% \end{align}
-
-% Jika rumus terlalu panjang untuk ditulis dalam satu baris, gunakan lingkungan \textit{multline} seperti pada Persamaan \ref{eq:rumus3} di bawah ini.
-% \begin{multline} 
-% y = a_0 + a_1x + a_2x^2 + a_3x^3 + a_4x^4 + a_5x^5 + a_6x^6 + a_7x^7 \\
-%     + a_8x^8 + a_9x^9 + a_{10}x^{10} \label{eq:rumus3}
-% \end{multline}
-
-% Jika ada penurunan rumus yang terdiri dari beberapa baris, namun tidak memerlukan penomoran pada setiap baris, gunakan lingkungan \textit{align*}, misalnya:
-
-% \begin{align*} 
-% S &= \sum_{i=1}^{n} i^2 \\
-%   &= 1^2 + 2^2 + 3^2 + \cdots + n^2 \\
-%   &= \frac{n(n + 1)(2n + 1)}{6}
-% \intertext{Contoh lainnya adalah rumus untuk mencari nilai rata-rata fungsi $f(x)$ pada interval $[p, q]$:}
-% \bar{f} &= \frac{1}{q - p} \int_{p}^{q} f(x) \, dx \\
-%         &= \frac{1}{q - p} \int_{p}^{q} (ax^2 + bx + c) \, dx \\
-%         &= \frac{1}{q - p} \left[ \frac{a}{3}x^3 + \frac{b}{2}x^2 + cx \right]_p^q \\
-%         &= \frac{a(q^3 - p^3)}{3(q - p)} + \frac{b(q^2 - p^2)}{2(q - p)} + c \label{eq:rumus4}
-% \end{align*}
-
-
-
-% \subsection{Algoritma, Pseudocode, atau Kode}
-% Contoh penulisan algoritma atau pseudocode dapat ditulis seperti pada Kode \ref{alg:contoh1} di bawah ini. 
-% Gunakan paket \textit{listings} untuk menulis source code dalam bahasa pemrograman tertentu, seperti pada Kode \ref{lst:contoh1}. 
-
-
-% % -- Example of pseudocode and source code listing --
-% % -- Gunakan minipage agar listing tidak terpotong ke halaman berikutnya --
-% \begin{minipage}{\textwidth} 
-% \begin{lstlisting}[frame=lines, captionpos=t, caption={Contoh pseudocode}, label={alg:contoh1}]
-% ALGORITHM HelloWorld
-%    PRINT "Hello, World!"
-% END ALGORITHM
-% \end{lstlisting}
-% \end{minipage}
-
-% \begin{minipage}{\textwidth}
-% \begin{lstlisting}[language=Python, frame=single, caption={Contoh source code Python}, captionpos=t, label={lst:contoh1}]
-% def hello_world():
-%     print("Hello, World!")       
-% hello_world()
-% \end{lstlisting}
-% \end{minipage}
-
-
-% \section{Beberapa Kesalahan Penulisan yang Sering Terjadi}
-% \subsection{Penggunaan Kata "di mana" atau "dimana"}
-% Banyak yang menuliskan kata "di mana" atau "dimana" sebagai pengganti kata "which" dalam bahasa Inggris. 
-% Padahal, penggunaan kata "di mana" atau "dimana" tidak tepat dalam konteks tersebut. Demikian juga untuk kata serupa, misalnya "yang mana".
-% Kata "di mana" atau "dimana" ini harus diganti dengan kata lain, seperti "dengan", "tempat", "yang", dan sebagainya tergantung kalimatnya.
-% Penjelasan lengkap dapat dilihat pada \autocite{BPBI}.
-
-% \subsection{Penggunaan Kata "sedangkan" dan "sehingga"}
-
-% \begin{table}[t]
-%   \begin{tabular}{|c|l|l|}
-%   \hline
-%   Kata & Salah & Benar \\ \hline
-%   sedangkan & \begin{tabular}[c]{@{}c@{}}Sedangkan sistem lama masih\\ digunakan oleh banyak pengguna.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sistem lama masih digunakan\\ oleh banyak pengguna,\\ sedangkan sistem baru belum siap.\end{tabular} \\ \hline
-%   sehingga & \begin{tabular}[c]{@{}c@{}}Sehingga sistem lama masih\\ digunakan oleh banyak pengguna.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sistem lama masih digunakan\\ oleh banyak pengguna sehingga\\ sistem baru belum siap.\end{tabular} \\ \hline
-%   \end{tabular}
-%   \caption{Contoh penggunaan kata "sedangkan" dan "sehingga"}
-%   \label{tbl:sedangkan_sehingga}
-% \end{table}
-
-% Kata "sedangkan" dan "sehingga" adalah kata hubung atau konjungsi. 
-% Konjungsi adalah kata atau ungkapan yang menghubungkan satuan bahasa 
-% (kata, frasa, klausa, dan kalimat). 
-% Konjungsi dapat dibagi menjadi konjungsi intrakalimat dan antarkalimat.  
-% Kata "sedangkan" menghubungkan dua klausa yang bersifat kontrasif, 
-% sedangkan "sehingga" menghubungkan dua klausa yang bersifat kausal. 
-% Dalam ragam formal, kata hubung “sedangkan” dan “sehingga” hanya dapat digunakan 
-% sebagai konjungsi intrakalimat sehingga kedua konjungsi itu \textbf{tidak dapat diletakkan pada awal kalimat}.
-% Selain itu, penggunaan kata "sedangkan" harus didahului oleh koma (,), sedangkan kata "sehingga" tidak perlu didahului oleh koma (,).
-% Contoh penggunaan yang benar dan salah dapat dilihat pada Tabel \ref{tbl:sedangkan_sehingga}.
-
-
-% \subsection{Penggunaan Istilah yang Tidak Baku}
-% Ada beberapa istilah yang sering digunakan dalam pembicaraan sehari-hari, tetapi tidak baku dalam penulisan ilmiah.
-% Beberapa istilah tersebut antara lain:
-% \begin{enumerate}
-%   \item analisa $\rightarrow$ analisis
-%   \item eksisting atau existing $\rightarrow$ yang ada atau saat ini
-%   \item bisnis proses $\rightarrow$ proses bisnis
-%   \item user $\rightarrow$ pengguna
-%   \item system $\rightarrow$ sistem
-%   \item database $\rightarrow$ basis data
-%   \item aktifitas $\rightarrow$ aktivitas
-%   \item efektifitas $\rightarrow$ efektivitas
-%   \item sosial media $\rightarrow$ media sosial
-% \end{enumerate}
-
-% \subsection{Pemisah Desimal dan Ribuan}
-% Tanda pemisah desimal dalam bahasa Indonesia adalah tanda koma, contoh:
-% \begin{enumerate}
-%   \item (Salah) Akurasi naik menjadi 50.6\% 
-%   \item (Benar) Akurasi naik menjadi 50,6\% 
-% \end{enumerate}
-
-% \subsection{Daftar atau \textit{List}}
-% Ada beberapa aturan penulisan daftar atau \textit{list} yang perlu diperhatikan, antara lain:
-% \begin{enumerate}[(a)]
-% \item Jika memungkinkan, hindari penggunaan “bullet points” atau sejenisnya. Sebaiknya, gunakan angka (1, 2, 3, ...) atau huruf (a, b, c, …). Dengan demikian, pembaca dapat dengan mudah melihat jumlah \textit{item} atau \textit{list}. 
-% \item Jika dalam daftar hanya ada satu item, tidak perlu menggunakan nomor urut.
-% \item Penjelasan atau deskripsi suatu item sebaiknya menyatu dengan judul item tersebut, tidak berbeda halaman. Contoh yang salah: judul item ada di halaman 10, namun deskripsinya di halaman 11. Sebaiknya pindahkan judul tersebut ke halaman 11.
-% \item Jika penjelasan atau deskripsi suatu item cukup panjang, misalnya lebih dari 1 halaman atau terdiri atas beberapa paragraf, sebaiknya setiap item tersebut dijadikan judul subbab, kecuali jika level subbab sudah mencapai level 4. 
-% \end{enumerate}
-
-% \subsection{Penggunaan Kata "masing-masing" dan "setiap"}
-% Kata “masing-masing” digunakan di belakang kata yang diterangkan, misalnya 
-% "Setiap proses menggunakan algoritma masing-masing". Kata “tiap-tiap” atau “setiap”
-% ditempatkan di depan kata yang diterangkan, misalnya
-% "Setiap proses menggunakan algoritma tertentu".

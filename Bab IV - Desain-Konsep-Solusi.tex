@@ -44,19 +44,19 @@ karhutla yang diusulkan. Secara ringkas, tahapan utama sistem dijelaskan sebagai
     \item Pengumpulan data historis bulanan \\
     Sistem mengumpulkan data historis titik \textit{hotspot}, faktor antropogenik, faktor biofisik, dan
     faktor meteorologis untuk setiap \textit{grid} pada wilayah Provinsi Kalimantan. Seluruh data dikumpulkan 
-    dalam satuan waktu bulanan sehingga setiap rekaman mempresentasikan kombinasi \textit{grid}-bulan. Skala
+    dalam satuan waktu bulanan sehingga setiap rekaman merepresentasikan kombinasi \textit{grid}-bulan. Skala
     bulanan dipilih karena relevan dengan perencanaan operasional mitigasi sekaligus lebih efisien
-    dari sisi volume dan pengolahan data
+    dari sisi volume dan pengolahan data.
     \item Pemrosesan dan integrasi data \\
     Data mentah dari berbagai sumber akan melalui tahap pemrosesan seperti pembersihan nilai dan penyesuaian
     format. Selain itu, langkah filter dan integrasi data juga dilakukan untuk mengetahui penyebab suatu \textit{grid}
     memiliki titik api atau tidak. Hasil tahap ini adalah \textit{dataset} bulanan per \textit{grid} yang siap digunakan
-    untuk pelatihan dan evaluasi model
+    untuk pelatihan dan evaluasi model.
     \item Pemodelan prediktif berbasis ML \\
     \textit{Dataset} terproses akan dijadikan masukan bagi model ML agar dapat menjadi model prediktif karhutla.
     Model ML yang digunakan adalah RF dan XGBoost agar memiliki \textit{benchmark} dan dapat menentukan model yang terbaik.
     Model berbasis \textit{ensemble tree} sangat relevan untuk memetakan hubungan kombinasi dari faktor meteorologis,
-    biofisik, dan antropogenik. Output utama dari model ini adalah skor atau kelas (level) risiko karhutla bulanan untuk setiap 
+    biofisik, dan antropogenik. \textit{Output} utama dari model ini adalah skor atau kelas (level) risiko karhutla bulanan untuk setiap 
     \textit{grid} wilayah. Resolusi waktu prediksi bulanan ini dipilih untuk mendukung perencanaan strategis dan manajemen logistik yang 
     secara administratif tidak bisa dilakukan dalam siklus harian. Jadi, prediksi ini melengkapi sistem harian BMKG yang bersifat taktis
     dan operasional.
@@ -69,7 +69,7 @@ karhutla yang diusulkan. Secara ringkas, tahapan utama sistem dijelaskan sebagai
     analisis XAI dan disajikan dalam bentuk peta grafik risiko. Penyajian ini bertujuan agar pemangku kepentingan seperti 
     instansi pengelola karhutla dapat memahami hasil prediksi dan menyusun rencana mitigasi dengan lebih cepat karena 
     dapat memanfaatkan hasil prediksi sebagai acuan dasar. Walaupun prediksi bukanlah hasil yang pasti, hasil yang diberikan
-    model tidak sekedar sebuah hasil. Namun, hasil yang diberikan disertai penjelasan sehingga analisis lanjutan mungkin 
+    model tidak sekadar sebuah hasil. Namun, hasil yang diberikan disertai penjelasan sehingga analisis lanjutan mungkin 
     tetap perlu dilakukan sebelum menyusun rencana mitigasi.
 \end{enumerate}
 
@@ -89,7 +89,7 @@ bulanan dan penjelasan faktor yang diharapkan dapat menjawab kebutuhan informasi
     Level risiko karhutla bulanan per \textit{grid} yang dibangun dari data historis multi-faktor. \\
     \hline
     Fungsi utama &
-    Mendukung monitoring dan respon reaktif ketika bahaya sudah tinggi. &
+    Mendukung \textit{monitoring} dan respon reaktif ketika bahaya sudah tinggi. &
     Menambah dukungan untuk perencanaan mitigasi proaktif melalui peta risiko dan informasi level potensi kebakaran. \\
     \hline
     Pemahaman faktor penyebab &
