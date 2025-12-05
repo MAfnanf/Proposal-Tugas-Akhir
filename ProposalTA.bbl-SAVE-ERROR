@@ -1,0 +1,1902 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{Abdollahi2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c1f4d85b77d547d0b66903b3358117e3}{%
+           family={Abdollahi},
+           familyi={A\bibinitperiod},
+           given={Arnick},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70c9c55c1cc5f1a8d025d54172241b84}{%
+           family={Pradhan},
+           familyi={P\bibinitperiod},
+           given={Biswajeet},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{fullhash}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{fullhashraw}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{bibnamehash}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{authorbibnamehash}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{authornamehash}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{authorfullhash}{9cf8508a46402fc02a4fa2124bf7102a}
+      \strng{authorfullhashraw}{9cf8508a46402fc02a4fa2124bf7102a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{18791026}
+      \field{journaltitle}{Science of the Total Environment}
+      \field{title}{Explainable artificial intelligence (XAI) for interpreting the contributing factors feed into the wildfire susceptibility prediction model}
+      \field{volume}{879}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1016/j.scitotenv.2023.163004
+      \endverb
+      \keyw{Deep learning,GIS,Machine learning,SHAP,Wildfire susceptibility,XAI}
+    \endentry
+    \entry{Adadi2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8a9ff04737c73b2b3a33aa683bf3fbce}{%
+           family={Adadi},
+           familyi={A\bibinitperiod},
+           given={Amina},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9bcbdaf716d702fac9dc8cc5800ef30}{%
+           family={Berrada},
+           familyi={B\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{fullhash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{fullhashraw}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{bibnamehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authorbibnamehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authornamehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authorfullhash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authorfullhashraw}{020b8c17b7a31bebb298656b5ca70bc3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{21693536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{52138\bibrangedash 52160}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2018.2870052
+      \endverb
+      \keyw{Explainable artificial intelligence,black-box models,interpretable machine learning}
+    \endentry
+    \entry{Ali2023}{article}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=7c30ed46e75a214543c4561d0c503095}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Sajid},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a118422792a668580761f59218a2a3e6}{%
+           family={Abuhmed},
+           familyi={A\bibinitperiod},
+           given={Tamer},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b99037e436ccfff2274ff29e4c8b7de}{%
+           family={El-Sappagh},
+           familyi={E\bibinithyphendelim S\bibinitperiod},
+           given={Shaker},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc7891c81d834c5b7ced804c65d6560f}{%
+           family={Muhammad},
+           familyi={M\bibinitperiod},
+           given={Khan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afa0adca052f9b1236c0383d716c895e}{%
+           family={Alonso-Moral},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2315ee377b1f5b143c0ba31409a1c9a}{%
+           family={Confalonieri},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da8fc5161754b324b4ac06cdfcb9f51e}{%
+           family={Guidotti},
+           familyi={G\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9af0792c82515e88f0d30221b55f31ba}{%
+           family={Ser},
+           familyi={S\bibinitperiod},
+           given={Javier\bibnamedelima Del},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2f49e7916926b46a6555cf86c18c919}{%
+           family={Díaz-Rodríguez},
+           familyi={D\bibinithyphendelim R\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f81f46436ba77791311a5db20ff5c25}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{d609a637515c8c66567f75f12dd57cfb}
+      \strng{fullhash}{a3052ee281bce9b8a53a53da4ce73754}
+      \strng{fullhashraw}{a3052ee281bce9b8a53a53da4ce73754}
+      \strng{bibnamehash}{a3052ee281bce9b8a53a53da4ce73754}
+      \strng{authorbibnamehash}{a3052ee281bce9b8a53a53da4ce73754}
+      \strng{authornamehash}{d609a637515c8c66567f75f12dd57cfb}
+      \strng{authorfullhash}{a3052ee281bce9b8a53a53da4ce73754}
+      \strng{authorfullhashraw}{a3052ee281bce9b8a53a53da4ce73754}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{15662535}
+      \field{journaltitle}{Information Fusion}
+      \field{title}{Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence}
+      \field{volume}{99}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1016/j.inffus.2023.101805
+      \endverb
+      \keyw{AI principles,Data Fusion,Deep Learning,Explainable Artificial Intelligence,Interpretable machine learning,Post-hoc explainability,Trustworthy AI,XAI assessment}
+    \endentry
+    \entry{Bifarin2023}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b9aae2d0504a62d63d11ecad73c2002}{%
+           family={Bifarin},
+           familyi={B\bibinitperiod},
+           given={Olatomiwa\bibnamedelima O.},
+           giveni={O\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{fullhash}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{fullhashraw}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{bibnamehash}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{authorbibnamehash}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{authornamehash}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{authorfullhash}{2b9aae2d0504a62d63d11ecad73c2002}
+      \strng{authorfullhashraw}{2b9aae2d0504a62d63d11ecad73c2002}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{19326203}
+      \field{issue}{5 May}
+      \field{journaltitle}{PLoS ONE}
+      \field{title}{Interpretable machine learning with treebased shapley additive explanations: Application to metabolomics datasets for binary classification}
+      \field{volume}{18}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0284315
+      \endverb
+    \endentry
+    \entry{Chen2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=e04c007a9dd5e2e4952a47be934f5262}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xinbao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bf1aa3e35b460a972304f9dbf547d73}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yaohui},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a534b04283ee201de3a9459e198e245f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1581ce0f38d7dbf45a15095dfaaf6129}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zecheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d9ac6815e27331ba6620def723e357f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chang},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58faa92eabcbb48c039b1f0958bd0806}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Junjun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{f28a25f8651a335d6a4b226e0d7ad15f}
+      \strng{fullhash}{80d63e692da4e94b1ab521a89a68bd01}
+      \strng{fullhashraw}{80d63e692da4e94b1ab521a89a68bd01}
+      \strng{bibnamehash}{80d63e692da4e94b1ab521a89a68bd01}
+      \strng{authorbibnamehash}{80d63e692da4e94b1ab521a89a68bd01}
+      \strng{authornamehash}{f28a25f8651a335d6a4b226e0d7ad15f}
+      \strng{authorfullhash}{80d63e692da4e94b1ab521a89a68bd01}
+      \strng{authorfullhashraw}{80d63e692da4e94b1ab521a89a68bd01}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{26736187}
+      \field{journaltitle}{Frontiers in Remote Sensing}
+      \field{title}{Comparative study of machine learning methods for mapping forest fire areas using Sentinel-1B and 2A imagery}
+      \field{volume}{5}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3389/frsen.2024.1446641
+      \endverb
+      \keyw{Sentinel-1B/2A,classification,comparative study,forest fire,machine learning}
+    \endentry
+    \entry{Eaturu2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e9128ff3fa411a2b60096fa3ca32bdca}{%
+           family={Eaturu},
+           familyi={E\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ef29b4f51040a47bd02e2f7f120656a}{%
+           family={Vadrevu},
+           familyi={V\bibinitperiod},
+           given={Krishna\bibnamedelima Prasad},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Research}%
+      }
+      \strng{namehash}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{fullhash}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{fullhashraw}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{bibnamehash}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{authorbibnamehash}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{authornamehash}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{authorfullhash}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \strng{authorfullhashraw}{04131dd8cf4d4c70eb535b76a3ac43a9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{20452322}
+      \field{issue}{1}
+      \field{journaltitle}{Scientific Reports}
+      \field{title}{Evaluation of machine learning and deep learning algorithms for fire prediction in Southeast Asia}
+      \field{volume}{15}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1038/s41598-025-00628-9
+      \endverb
+    \endentry
+    \entry{NurFitriani2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fded47d180bcb5cf05c8d5dfe1e86b7f}{%
+           family={Fitriani},
+           familyi={F\bibinitperiod},
+           given={Rizqi\bibnamedelima Nur},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0443e429b6fe160053e7c80256bf0cb}{%
+           family={Priatmadi},
+           familyi={P\bibinitperiod},
+           given={Bambang\bibnamedelima Joko},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38759c60804a534115962c1583e7df5f}{%
+           family={Saidy},
+           familyi={S\bibinitperiod},
+           given={Akhmad\bibnamedelima Rizalli},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaa7d8c43e6ea4719c2172711060f190}{%
+           family={Syahdan},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce4a3a9ef04fc898c5a13234114f412f}{%
+           family={Lingkungan\bibnamedelimb Program\bibnamedelima Pascasarjana},
+           familyi={L\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Program\bibnamedelimb Studi\bibnamedelimb Pengelolaan\bibnamedelimb Sumberdaya\bibnamedelima Alam},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0,
+           prefix={dan},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{34764083878b83dcf3c62598119e6aa3}
+      \strng{fullhash}{9ff2e8ef128a5b9baf56140b0bbf7161}
+      \strng{fullhashraw}{9ff2e8ef128a5b9baf56140b0bbf7161}
+      \strng{bibnamehash}{9ff2e8ef128a5b9baf56140b0bbf7161}
+      \strng{authorbibnamehash}{9ff2e8ef128a5b9baf56140b0bbf7161}
+      \strng{authornamehash}{34764083878b83dcf3c62598119e6aa3}
+      \strng{authorfullhash}{9ff2e8ef128a5b9baf56140b0bbf7161}
+      \strng{authorfullhashraw}{9ff2e8ef128a5b9baf56140b0bbf7161}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{2302-3708}
+      \field{issue}{2}
+      \field{title}{PENENTUAN TINGKAT RESIKO KEBAKARAN HUTAN DAN LAHAN MENGGUNAKAN METODE INDEKS CUACA KEBAKARAN (FIRE WEATHER INDEX) DAN JUMLAH TITIK PANAS (HOTSPOT) DI KABUPATEN BANJAR PROVINSI KALIMANTAN SELATAN Forest and Land Fire Risk Level Determination Using The Fire Weather Index Method and The Number Of Hotspots in Banjar District, South Kalimantan Province}
+      \field{volume}{19}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cds.climate.copernicus.eu/.
+      \endverb
+      \verb{url}
+      \verb https://cds.climate.copernicus.eu/.
+      \endverb
+      \keyw{drought code,fine fuel moisture code,forest and land fires,hotspot,risk level}
+    \endentry
+    \entry{Fitriany2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=02986c6d8a94f6a8ee23389de3d70028}{%
+           family={Fitriany},
+           familyi={F\bibinitperiod},
+           given={Anni\bibnamedelima Arumsari},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e34baa134c738e982fef881ab8bd2b40}{%
+           family={Flatau},
+           familyi={F\bibinitperiod},
+           given={Piotr\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08c6de45126fd9d48878fc4df6673035}{%
+           family={Khoirunurrofik},
+           familyi={K\bibinitperiod},
+           given={Khoirunurrofik},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9365a2c1f5f6c2d4be78eff43650045}{%
+           family={Riama},
+           familyi={R\bibinitperiod},
+           given={Nelly\bibnamedelima Florida},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{33501d50f8e338186c4664a9f8f7a406}
+      \strng{fullhash}{500b7daa317532e36b33e4e2861b8d0b}
+      \strng{fullhashraw}{500b7daa317532e36b33e4e2861b8d0b}
+      \strng{bibnamehash}{500b7daa317532e36b33e4e2861b8d0b}
+      \strng{authorbibnamehash}{500b7daa317532e36b33e4e2861b8d0b}
+      \strng{authornamehash}{33501d50f8e338186c4664a9f8f7a406}
+      \strng{authorfullhash}{500b7daa317532e36b33e4e2861b8d0b}
+      \strng{authorfullhashraw}{500b7daa317532e36b33e4e2861b8d0b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{20711050}
+      \field{issue}{20}
+      \field{journaltitle}{Sustainability (Switzerland)}
+      \field{title}{Assessment on the use of meteorological and social media information for forest fire detection and prediction in riau, indonesia}
+      \field{volume}{13}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/su132011188
+      \endverb
+      \keyw{Forest fires,Indonesia,Meteorology,Newspaper,Policy,Tweeter}
+    \endentry
+    \entry{Fumagalli2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=59057fd1c88ce08d554b1613270ae835}{%
+           family={Fumagalli},
+           familyi={F\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5936d3b318dc638ba104251159a1855d}{%
+           family={Muschalik},
+           familyi={M\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce2458f8ac2ca4f2198649b4e8a00380}{%
+           family={Hüllermeier},
+           familyi={H\bibinitperiod},
+           given={Eyke},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1bd1dafa48cc8988d67e2256d859a29e}{%
+           family={Hammer},
+           familyi={H\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{28ee74dc594a5b78282aca8486542b0c}
+      \strng{fullhash}{78616d9cb49187194ea77edf03241847}
+      \strng{fullhashraw}{78616d9cb49187194ea77edf03241847}
+      \strng{bibnamehash}{78616d9cb49187194ea77edf03241847}
+      \strng{authorbibnamehash}{78616d9cb49187194ea77edf03241847}
+      \strng{authornamehash}{28ee74dc594a5b78282aca8486542b0c}
+      \strng{authorfullhash}{78616d9cb49187194ea77edf03241847}
+      \strng{authorfullhashraw}{78616d9cb49187194ea77edf03241847}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{15730565}
+      \field{issue}{12}
+      \field{journaltitle}{Machine Learning}
+      \field{title}{Incremental permutation feature importance (iPFI): towards online explanations on data streams}
+      \field{volume}{112}
+      \field{year}{2023}
+      \field{pages}{4863\bibrangedash 4903}
+      \range{pages}{41}
+      \verb{doi}
+      \verb 10.1007/s10994-023-06385-y
+      \endverb
+      \keyw{Explainable artificial intelligence,Feature importance,Incremental learning,Permutation feature importance}
+    \endentry
+    \entry{UnitedStatesGeneralAccountingOffice2003}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aae9997182b1c910bd223445411cd912}{%
+           family={GAO},
+           familyi={G\bibinitperiod},
+           given={United\bibnamedelimb States\bibnamedelimb General\bibnamedelimb Accounting\bibnamedelima Office},
+           giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aae9997182b1c910bd223445411cd912}
+      \strng{fullhash}{aae9997182b1c910bd223445411cd912}
+      \strng{fullhashraw}{aae9997182b1c910bd223445411cd912}
+      \strng{bibnamehash}{aae9997182b1c910bd223445411cd912}
+      \strng{authorbibnamehash}{aae9997182b1c910bd223445411cd912}
+      \strng{authornamehash}{aae9997182b1c910bd223445411cd912}
+      \strng{authorfullhash}{aae9997182b1c910bd223445411cd912}
+      \strng{authorfullhashraw}{aae9997182b1c910bd223445411cd912}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Challenges to Effective Data Sharing}
+      \field{type}{techreport}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://www.gao.gov/cgi-bin/getrpt?GAO-03-874T
+      \endverb
+      \verb{url}
+      \verb https://www.gao.gov/cgi-bin/getrpt?GAO-03-874T
+      \endverb
+    \endentry
+    \entry{Gupta2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0684aa6c8b6be042529df046b846db55}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Shivam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e7e12a2731265eda5fedc530706bf3a}{%
+           family={Modgil},
+           familyi={M\bibinitperiod},
+           given={Sachin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaefa40b80bd636c7afe041181eb4966}{%
+           family={Bhattacharyya},
+           familyi={B\bibinitperiod},
+           given={Samadrita},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00d3f0a275bcfd5d043231be15c7cccc}{%
+           family={Bose},
+           familyi={B\bibinitperiod},
+           given={Indranil},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{84bdc98ea64fca691a4ba066904b9b58}
+      \strng{fullhash}{1f587a1b38bc1d122b595abac55a3680}
+      \strng{fullhashraw}{1f587a1b38bc1d122b595abac55a3680}
+      \strng{bibnamehash}{1f587a1b38bc1d122b595abac55a3680}
+      \strng{authorbibnamehash}{1f587a1b38bc1d122b595abac55a3680}
+      \strng{authornamehash}{84bdc98ea64fca691a4ba066904b9b58}
+      \strng{authorfullhash}{1f587a1b38bc1d122b595abac55a3680}
+      \strng{authorfullhashraw}{1f587a1b38bc1d122b595abac55a3680}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{15729338}
+      \field{issue}{1-2}
+      \field{journaltitle}{Annals of Operations Research}
+      \field{title}{Artificial intelligence for decision support systems in the field of operations research: review and future scope of research}
+      \field{volume}{308}
+      \field{year}{2022}
+      \field{pages}{215\bibrangedash 274}
+      \range{pages}{60}
+      \verb{doi}
+      \verb 10.1007/s10479-020-03856-6
+      \endverb
+      \keyw{Artificial intelligence,Decision support systems,Operations research,Systematic literature review}
+    \endentry
+    \entry{Hein2022}{article}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=ad897f570859c32c657c3453f844dcd4}{%
+           family={Hein},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14a515592cdd1f8ca184414310bc1a4c}{%
+           family={Spadaro},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d9b917783511ded9f960b3d8d377325}{%
+           family={Ostro},
+           familyi={O\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=375bc708a8c2e2ed01f31b661efbf38b}{%
+           family={Hammer},
+           familyi={H\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f750071de36cfa0bb9ac5421c9822346}{%
+           family={Sumarga},
+           familyi={S\bibinitperiod},
+           given={Elham},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b3d71315356513e1dee36b81b020a7d}{%
+           family={Salmayenti},
+           familyi={S\bibinitperiod},
+           given={Resti},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=260a76191e9f57533b1b33b1ad5f35b2}{%
+           family={Boer},
+           familyi={B\bibinitperiod},
+           given={Rizaldi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c50e93fdfd0bc4c8b242dd5bc2703a78}{%
+           family={Tata},
+           familyi={T\bibinitperiod},
+           given={Hesti},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a344053eb8839da603116d8c5a4b398}{%
+           family={Atmoko},
+           familyi={A\bibinitperiod},
+           given={Dwi},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56780e17096db23e5af8fca7d9d8b4c8}{%
+           family={Castañeda},
+           familyi={C\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central Ltd}%
+      }
+      \strng{namehash}{f79b60899a2f3f5a3a6fa0d98df42283}
+      \strng{fullhash}{72444a6a12ad8e747547f28cf01174f2}
+      \strng{fullhashraw}{72444a6a12ad8e747547f28cf01174f2}
+      \strng{bibnamehash}{72444a6a12ad8e747547f28cf01174f2}
+      \strng{authorbibnamehash}{72444a6a12ad8e747547f28cf01174f2}
+      \strng{authornamehash}{f79b60899a2f3f5a3a6fa0d98df42283}
+      \strng{authorfullhash}{72444a6a12ad8e747547f28cf01174f2}
+      \strng{authorfullhashraw}{72444a6a12ad8e747547f28cf01174f2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{1476069X}
+      \field{issue}{1}
+      \field{journaltitle}{Environmental Health: A Global Access Science Source}
+      \field{title}{The health impacts of Indonesian peatland fires}
+      \field{volume}{21}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1186/s12940-022-00872-w
+      \endverb
+      \keyw{Health effects,Indonesia,Peatland fires}
+    \endentry
+    \entry{Indradjad2024}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=37964a707f06932e9e07cf0823c7655d}{%
+           family={Indradjad},
+           familyi={I\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cacb341858bd2c2e9337588c50bb6c3c}{%
+           family={Dimyati},
+           familyi={D\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f293812fc0e796eb3949afddd92b59ee}{%
+           family={Vetrita},
+           familyi={V\bibinitperiod},
+           given={Yenni},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b052467143961474504b7d11fa1930ed}{%
+           family={Adiningsih},
+           familyi={A\bibinitperiod},
+           given={Erna\bibnamedelima Sri},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca51f123af6f3d27d3a4a2c0468f08c9}{%
+           family={Rokhmatuloh},
+           familyi={R\bibinitperiod},
+           given={Rokhmatuloh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute (MDPI)}%
+      }
+      \strng{namehash}{c9abd58c944f7f5cc690dde3df0f99a8}
+      \strng{fullhash}{895d76aadad6472f0c7875da9ab6a93f}
+      \strng{fullhashraw}{895d76aadad6472f0c7875da9ab6a93f}
+      \strng{bibnamehash}{895d76aadad6472f0c7875da9ab6a93f}
+      \strng{authorbibnamehash}{895d76aadad6472f0c7875da9ab6a93f}
+      \strng{authornamehash}{c9abd58c944f7f5cc690dde3df0f99a8}
+      \strng{authorfullhash}{895d76aadad6472f0c7875da9ab6a93f}
+      \strng{authorfullhashraw}{895d76aadad6472f0c7875da9ab6a93f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{25716255}
+      \field{issue}{1}
+      \field{journaltitle}{Fire}
+      \field{month}{1}
+      \field{title}{Enhancing Fire Monitoring Method over Peatlands and Non-Peatlands in Indonesia Using Visible Infrared Imaging Radiometer Suite Data}
+      \field{volume}{7}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3390/fire7010009
+      \endverb
+      \keyw{VIIRS,active fire,clustering method,fire management,peatland}
+    \endentry
+    \entry{jain2021}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=619623844a7f601c57e55f2dc672f519}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a25098b31ed4127a314f85748ff0f13}{%
+           family={Coogan},
+           familyi={C\bibinitperiod},
+           given={S.\bibnamedelimi C.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a26c67a58448e2d3b4b7ae30bb883ef4}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c71b555b2eb01009b1ce7494cb939114}{%
+           family={Crowley},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c63b1d94a067ccc2d6a41783f482ffc4}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10cbbd142e4d3e8fe07d8c35e33fb7c6}{%
+           family={Flannigan},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bdedd1f8f94618e4aacdcfcc589a7e21}
+      \strng{fullhash}{ad9eaf1fdbc183f92e72376d4d9baf68}
+      \strng{fullhashraw}{ad9eaf1fdbc183f92e72376d4d9baf68}
+      \strng{bibnamehash}{ad9eaf1fdbc183f92e72376d4d9baf68}
+      \strng{authorbibnamehash}{ad9eaf1fdbc183f92e72376d4d9baf68}
+      \strng{authornamehash}{bdedd1f8f94618e4aacdcfcc589a7e21}
+      \strng{authorfullhash}{ad9eaf1fdbc183f92e72376d4d9baf68}
+      \strng{authorfullhashraw}{ad9eaf1fdbc183f92e72376d4d9baf68}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Environmental Reviews}
+      \field{number}{4}
+      \field{title}{A review of machine learning applications in wildfire science and management}
+      \field{volume}{29}
+      \field{year}{2021}
+      \field{pages}{438\bibrangedash 461}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1139/er-2020-0132
+      \endverb
+    \endentry
+    \entry{Kabir2025}{misc}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=496afcf93fbb4071704ab20bfd640310}{%
+           family={Kabir},
+           familyi={K\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a54a2018c12859de99fb5fdd2d6a95dd}{%
+           family={Hossain},
+           familyi={H\bibinitperiod},
+           given={Mohammad\bibnamedelima Shahadat},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f4fbc3e6df95ba22b9438d10e5de838}{%
+           family={Andersson},
+           familyi={A\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute (MDPI)}%
+      }
+      \strng{namehash}{774ca98416ca697814e7a47a47a79160}
+      \strng{fullhash}{774ca98416ca697814e7a47a47a79160}
+      \strng{fullhashraw}{774ca98416ca697814e7a47a47a79160}
+      \strng{bibnamehash}{774ca98416ca697814e7a47a47a79160}
+      \strng{authorbibnamehash}{774ca98416ca697814e7a47a47a79160}
+      \strng{authornamehash}{774ca98416ca697814e7a47a47a79160}
+      \strng{authorfullhash}{774ca98416ca697814e7a47a47a79160}
+      \strng{authorfullhashraw}{774ca98416ca697814e7a47a47a79160}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The widespread adoption of Artificial Intelligence (AI) in critical domains, such as healthcare, finance, law, and autonomous systems, has brought unprecedented societal benefits. Its black-box (sub-symbolic) nature allows AI to compute prediction without explaining the rationale to the end user, resulting in lack of transparency between human and machine. Concerns are growing over the opacity of such complex AI models, particularly deep learning architectures. To address this concern, explainability is of paramount importance, which has triggered the emergence of Explainable Artificial Intelligence (XAI) as a vital research area. XAI is aimed at enhancing transparency, trust, and accountability of AI models. This survey presents a comprehensive overview of XAI from the dual perspectives of challenges and opportunities. We analyze the foundational concepts, definitions, terminologies, and taxonomy of XAI methods. We then review several application domains of XAI. Special attention is given to various challenges of XAI, such as no universal definition, trade-off between accuracy and interpretability, and lack of standardized evaluation metrics. We conclude by outlining the future research directions of human-centric design, interactive explanation, and standardized evaluation frameworks. This survey serves as a resource for researchers, practitioners, and policymakers to navigate the evolving landscape of interpretable and responsible AI.}
+      \field{issn}{19994893}
+      \field{issue}{9}
+      \field{journaltitle}{Algorithms}
+      \field{month}{9}
+      \field{title}{A Review of Explainable Artificial Intelligence from the Perspectives of Challenges and Opportunities}
+      \field{volume}{18}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.3390/a18090556
+      \endverb
+      \keyw{accuracy,evaluation metrics,explainable artificial intelligence (XAI),human-centered design,interpretability,post hoc explanation,transparency,trust}
+    \endentry
+    \entry{Karurung2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=02bc666b0ff96116434c41a226f461e6}{%
+           family={Karurung},
+           familyi={K\bibinitperiod},
+           given={Wulan\bibnamedelima Salle},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=636266e42e875a5f60ce5bb563ac39f4}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kangjae},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1a092ca6b28b27e17bf093d61ea236d}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Wonhee},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{fullhash}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{fullhashraw}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{bibnamehash}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{authorbibnamehash}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{authornamehash}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{authorfullhash}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \strng{authorfullhashraw}{7df2639f3d82bf83ae95abd4cae2e24b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{1872826X}
+      \field{journaltitle}{International Journal of Applied Earth Observation and Geoinformation}
+      \field{title}{Assessment of forest fire vulnerability prediction in Indonesia: Seasonal variability analysis using machine learning techniques}
+      \field{volume}{138}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.jag.2025.104435
+      \endverb
+      \keyw{Machine learning,Partial dependence plot,Prediction,Remote sensing,Wildfire susceptibility mapping}
+    \endentry
+    \entry{sipongi_klhk}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35be3634ee0188fa3afe5841c1548a7a}{%
+           family={{Kementerian Lingkungan Hidup dan Kehutanan (KLHK)}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{fullhash}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{fullhashraw}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{bibnamehash}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{authorbibnamehash}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{authornamehash}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{authorfullhash}{35be3634ee0188fa3afe5841c1548a7a}
+      \strng{authorfullhashraw}{35be3634ee0188fa3afe5841c1548a7a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses 28 Oktober 2025}
+      \field{title}{SIPONGI: Sistem Informasi Pengendalian Kebakaran Hutan dan Lahan}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sipongi.menlhk.go.id/
+      \endverb
+      \verb{url}
+      \verb https://sipongi.menlhk.go.id/
+      \endverb
+    \endentry
+    \entry{Lavazza2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5f1c1453eea6216ef6b1f75419762b72}{%
+           family={Lavazza},
+           familyi={L\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11da072c7abce5166c593c81bf84d4a8}{%
+           family={Morasca},
+           familyi={M\bibinitperiod},
+           given={Sandro},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4165d71d473adf718b59d4df5ae7a90a}{%
+           family={Rotoloni},
+           familyi={R\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{fullhash}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{fullhashraw}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{bibnamehash}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{authorbibnamehash}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{authornamehash}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{authorfullhash}{ee4b61116a839f09cd8f8fd146519f06}
+      \strng{authorfullhashraw}{ee4b61116a839f09cd8f8fd146519f06}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{09505849}
+      \field{journaltitle}{Information and Software Technology}
+      \field{title}{Software Defect Prediction evaluation: New metrics based on the ROC curve}
+      \field{volume}{187}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.infsof.2025.107865
+      \endverb
+      \keyw{Accuracy,Area under the ROC curve (AUROC),Area under the curve (AUC),Binary classifiers,Fault prediction,Fault-proneness models,Matthews Correlation Coefficient,Pearson ϕ,Performance metrics,ROC curves}
+    \endentry
+    \entry{Lundberg2017}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a1075150e1e1dad8127b019f7ca9031}{%
+           family={Lundberg},
+           familyi={L\bibinitperiod},
+           given={Scott\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee964079d93879aaef2382a5fff343d3}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Su-In},
+           giveni={S\bibinithyphendelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{fullhash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{fullhashraw}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{bibnamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorbibnamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authornamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorfullhash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorfullhashraw}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 31st International Conference on Neural Information Processing Systems (NIPS 2017)}
+      \field{isbn}{9781510860964}
+      \field{title}{A Unified Approach to Interpreting Model Predictions}
+      \field{year}{2017}
+      \field{pages}{4765\bibrangedash 4774}
+      \range{pages}{10}
+    \endentry
+    \entry{Miller2024}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=55039a1b4182ba5427bd80d3b8b728b3}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Catriona},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f448fc859448f0ce6a41060c620fccbc}{%
+           family={Portlock},
+           familyi={P\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d3417603276febd0f7555f5deb89606}{%
+           family={Nyaga},
+           familyi={N\bibinitperiod},
+           given={Denis\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a11e30e8b23e160b43d5bed433b7b99c}{%
+           family={O’Sullivan},
+           familyi={O\bibinitperiod},
+           given={Justin\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{1177a7acf53e2c173850e384292536cb}
+      \strng{fullhash}{ccfa526083a5d401577b558f77133b60}
+      \strng{fullhashraw}{ccfa526083a5d401577b558f77133b60}
+      \strng{bibnamehash}{ccfa526083a5d401577b558f77133b60}
+      \strng{authorbibnamehash}{ccfa526083a5d401577b558f77133b60}
+      \strng{authornamehash}{1177a7acf53e2c173850e384292536cb}
+      \strng{authorfullhash}{ccfa526083a5d401577b558f77133b60}
+      \strng{authorfullhashraw}{ccfa526083a5d401577b558f77133b60}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{26737647}
+      \field{journaltitle}{Frontiers in Bioinformatics}
+      \field{title}{A review of model evaluation metrics for machine learning in genetics and genomics}
+      \field{volume}{4}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3389/fbinf.2024.1457619
+      \endverb
+      \keyw{classification,clustering,disease prediction,genomics prediction,machine learning,metrics,regression}
+    \endentry
+    \entry{Nurhayati2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=c370be372c6fbdd01ba45143f11797dc}{%
+           family={Nurhayati},
+           familyi={N\bibinitperiod},
+           given={Ati\bibnamedelima Dwi},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de2daa617ed45f75151dd26ebbff90b6}{%
+           family={Saharjo},
+           familyi={S\bibinitperiod},
+           given={Bambang\bibnamedelima Hero},
+           giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fca8db6484695dc1f01020f1568105fc}{%
+           family={Sundawati},
+           familyi={S\bibinitperiod},
+           given={Leti},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8d3e521ef61b02c12fbed8d4adb9d1b}{%
+           family={Syartinilia},
+           familyi={S\bibinitperiod},
+           given={Syartinilia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c6ad55367809d69f85d866890e5a7a7}{%
+           family={Cochrane},
+           familyi={C\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hasanuddin University}%
+      }
+      \strng{namehash}{1097b618f8b09bc2da34cfd7b23b499c}
+      \strng{fullhash}{8cb15f177bd080aadf48ef9f81e6107b}
+      \strng{fullhashraw}{8cb15f177bd080aadf48ef9f81e6107b}
+      \strng{bibnamehash}{8cb15f177bd080aadf48ef9f81e6107b}
+      \strng{authorbibnamehash}{8cb15f177bd080aadf48ef9f81e6107b}
+      \strng{authornamehash}{1097b618f8b09bc2da34cfd7b23b499c}
+      \strng{authorfullhash}{8cb15f177bd080aadf48ef9f81e6107b}
+      \strng{authorfullhashraw}{8cb15f177bd080aadf48ef9f81e6107b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{25494333}
+      \field{issue}{2}
+      \field{journaltitle}{Forest and Society}
+      \field{title}{Forest and peatland fire dynamics in South Sumatra Province}
+      \field{volume}{5}
+      \field{year}{2021}
+      \field{pages}{591\bibrangedash 603}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.24259/fs.v5i2.14435
+      \endverb
+      \keyw{Burned area,Hotspot numbers,Ogan Komering Ilir,Peatland fires,Rainfall,South Sumatra}
+    \endentry
+    \entry{OShea2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=76ab9f1e12292d7e30160646ffa5185f}{%
+           family={O'Shea},
+           familyi={O\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f9c1328c5bb3a75aa1955245126187a}{%
+           family={Deeney},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f71e3867d0c7e802fe2792ccd5c3382}{%
+           family={Triantaphyllou},
+           familyi={T\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a64441d5ee3dd10224e7c8ec4bdcc3a}{%
+           family={Diaz-Balteiro},
+           familyi={D\bibinithyphendelim B\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e13c7d63b9abb2a014a8987385ca9f00}{%
+           family={Tarim},
+           familyi={T\bibinitperiod},
+           given={S.\bibnamedelimi Armagan},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Ltd}%
+      }
+      \strng{namehash}{418fabf94275307c3fe7275c25df0e7d}
+      \strng{fullhash}{b0d8fc89b69c61d38a50e337af2e63c3}
+      \strng{fullhashraw}{b0d8fc89b69c61d38a50e337af2e63c3}
+      \strng{bibnamehash}{b0d8fc89b69c61d38a50e337af2e63c3}
+      \strng{authorbibnamehash}{b0d8fc89b69c61d38a50e337af2e63c3}
+      \strng{authornamehash}{418fabf94275307c3fe7275c25df0e7d}
+      \strng{authorfullhash}{b0d8fc89b69c61d38a50e337af2e63c3}
+      \strng{authorfullhashraw}{b0d8fc89b69c61d38a50e337af2e63c3}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{09574174}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{Weight stability intervals for multi-criteria decision analysis using the weighted sum model}
+      \field{volume}{296}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.1016/j.eswa.2025.128460
+      \endverb
+      \keyw{Multi-criteria decision analysis,Multi-criteria decision making sensitivity analysis,Multiple criteria analysis,Weight stability interval}
+    \endentry
+    \entry{Prasetyo2022}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=84ea10f4754d8af2f501af2d08ef93ed}{%
+           family={Prasetyo},
+           familyi={P\bibinitperiod},
+           given={Lilik\bibnamedelima Budi},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9777ffaa00e65cda9178c80789a01f15}{%
+           family={Setiawan},
+           familyi={S\bibinitperiod},
+           given={Yudi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80e6cbbb540bf15d985b58c730ec9eeb}{%
+           family={Condro},
+           familyi={C\bibinitperiod},
+           given={Aryo\bibnamedelima Adhi},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb3811e54840ae877bed0c9f5142cc0a}{%
+           family={Kustiyo},
+           familyi={K\bibinitperiod},
+           given={Kustiyo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37291128b3324e9deb9bca0b3bcbf8c6}{%
+           family={Putra},
+           familyi={P\bibinitperiod},
+           given={Erianto\bibnamedelima Indra},
+           giveni={E\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28ed861249f33a59ffee0df1603ca325}{%
+           family={Hayati},
+           familyi={H\bibinitperiod},
+           given={Nur},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc37af1dd64af6d62d24cf7cd01119a3}{%
+           family={Wijayanto},
+           familyi={W\bibinitperiod},
+           given={Arif\bibnamedelima Kurnia},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da59ccf4d9dbf971cba284ac085f3810}{%
+           family={Ramadhi},
+           familyi={R\bibinitperiod},
+           given={Almi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dee20779e40c11c141c9882cd31a3d02}{%
+           family={Murdiyarso},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{5e98d4cf72c5f9fadceb00c02f97f417}
+      \strng{fullhash}{32d279fdf599cdc904cf745f7960bf6c}
+      \strng{fullhashraw}{32d279fdf599cdc904cf745f7960bf6c}
+      \strng{bibnamehash}{32d279fdf599cdc904cf745f7960bf6c}
+      \strng{authorbibnamehash}{32d279fdf599cdc904cf745f7960bf6c}
+      \strng{authornamehash}{5e98d4cf72c5f9fadceb00c02f97f417}
+      \strng{authorfullhash}{32d279fdf599cdc904cf745f7960bf6c}
+      \strng{authorfullhashraw}{32d279fdf599cdc904cf745f7960bf6c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{19994907}
+      \field{issue}{6}
+      \field{journaltitle}{Forests}
+      \field{title}{Assessing Sumatran Peat Vulnerability to Fire under Various Condition of ENSO Phases Using Machine Learning Approaches}
+      \field{volume}{13}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/f13060828
+      \endverb
+      \keyw{Sumatera,climate variability,ensemble model,tropical peatland,vulnerability assessment}
+    \endentry
+    \entry{Prayoga2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=44aada203887956418114c6a9cc2743e}{%
+           family={Prayoga},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi Bayu\bibnamedelima Rizky},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b5956d9798e61d28a9f03b2e934ecd2}{%
+           family={Koestoer},
+           familyi={K\bibinitperiod},
+           given={Raldi\bibnamedelima Hendro},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Research}%
+        {Community Services Diponegoro University (LPPM UNDIP)}%
+      }
+      \strng{namehash}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{fullhash}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{fullhashraw}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{bibnamehash}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{authorbibnamehash}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{authornamehash}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{authorfullhash}{f6073070563e2f0b9537cf2a9daad7ed}
+      \strng{authorfullhashraw}{f6073070563e2f0b9537cf2a9daad7ed}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{2338-1604}
+      \field{issue}{3}
+      \field{journaltitle}{Jurnal Wilayah dan Lingkungan}
+      \field{month}{12}
+      \field{title}{Improving Forest Fire Mitigation in Indonesia: A Lesson from Canada}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{293\bibrangedash 305}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.14710/jwl.9.3.293-305
+      \endverb
+    \endentry
+    \entry{Qamariyanti2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0f84567cdf412234e66e8f181feaa4d9}{%
+           family={Qamariyanti},
+           familyi={Q\bibinitperiod},
+           given={Yulia},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8d706ffa130e77b1fd9b23a579e6961}{%
+           family={Usman},
+           familyi={U\bibinitperiod},
+           given={Rachmadi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2bb0a121de4a309d87b2a507041bf1ad}{%
+           family={Rahmawati},
+           familyi={R\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Research}%
+        {Community Services Diponegoro University (LPPM UNDIP)}%
+      }
+      \strng{namehash}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{fullhash}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{fullhashraw}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{bibnamehash}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{authorbibnamehash}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{authornamehash}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{authorfullhash}{fd9872ed4118ab2b124974d5c45eaba2}
+      \strng{authorfullhashraw}{fd9872ed4118ab2b124974d5c45eaba2}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{1829-8907}
+      \field{issue}{1}
+      \field{journaltitle}{Jurnal Ilmu Lingkungan}
+      \field{title}{Pencegahan dan Penanggulangan Kebakaran Lahan Gambut dan Hutan}
+      \field{volume}{21}
+      \field{year}{2023}
+      \field{pages}{132\bibrangedash 142}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.14710/jil.21.1.132-142
+      \endverb
+    \endentry
+    \entry{Rossita2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d6d29dd7dc09d5fccb5411b604e177b4}{%
+           family={Rossita},
+           familyi={R\bibinitperiod},
+           given={Annuri},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=260a76191e9f57533b1b33b1ad5f35b2}{%
+           family={Boer},
+           familyi={B\bibinitperiod},
+           given={Rizaldi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad897f570859c32c657c3453f844dcd4}{%
+           family={Hein},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d47a3e4c58213eb7f82059cde162d1d2}{%
+           family={Nurrochmat},
+           familyi={N\bibinitperiod},
+           given={Dodik\bibnamedelima Ridho},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bf6d556fd4e9551e37726aa4c8f4724}{%
+           family={Riqqi},
+           familyi={R\bibinitperiod},
+           given={Akhmad},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hasanuddin University}%
+      }
+      \strng{namehash}{52cdf302a58a46f40d3cd69f43c745a9}
+      \strng{fullhash}{f8321ed3af4e15e6f642508d038426a3}
+      \strng{fullhashraw}{f8321ed3af4e15e6f642508d038426a3}
+      \strng{bibnamehash}{f8321ed3af4e15e6f642508d038426a3}
+      \strng{authorbibnamehash}{f8321ed3af4e15e6f642508d038426a3}
+      \strng{authornamehash}{52cdf302a58a46f40d3cd69f43c745a9}
+      \strng{authorfullhash}{f8321ed3af4e15e6f642508d038426a3}
+      \strng{authorfullhashraw}{f8321ed3af4e15e6f642508d038426a3}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{25494333}
+      \field{issue}{1}
+      \field{journaltitle}{Forest and Society}
+      \field{title}{Peatland fire regime across Riau peat hydrological unit, Indonesia}
+      \field{volume}{7}
+      \field{year}{2023}
+      \field{pages}{76\bibrangedash 94}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.24259/FS.V7I1.21996
+      \endverb
+      \keyw{Fire regime,KHG-based,Peatland fire,Peatland management,Spatio-temporal pattern}
+    \endentry
+    \entry{Sarker2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e22a4443fd23c87312de251117c5f761}{%
+           family={Sarker},
+           familyi={S\bibinitperiod},
+           given={Iqbal\bibnamedelima H.},
+           giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{fullhash}{e22a4443fd23c87312de251117c5f761}
+      \strng{fullhashraw}{e22a4443fd23c87312de251117c5f761}
+      \strng{bibnamehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authorbibnamehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authornamehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authorfullhash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authorfullhashraw}{e22a4443fd23c87312de251117c5f761}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{26618907}
+      \field{issue}{3}
+      \field{journaltitle}{SN Computer Science}
+      \field{title}{Machine Learning: Algorithms, Real-World Applications and Research Directions}
+      \field{volume}{2}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1007/s42979-021-00592-x
+      \endverb
+      \keyw{Artificial intelligence,Data science,Data-driven decision-making,Deep learning,Intelligent applications,Machine learning,Predictive analytics}
+    \endentry
+    \entry{Sarker2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e22a4443fd23c87312de251117c5f761}{%
+           family={Sarker},
+           familyi={S\bibinitperiod},
+           given={Iqbal\bibnamedelima H.},
+           giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{fullhash}{e22a4443fd23c87312de251117c5f761}
+      \strng{fullhashraw}{e22a4443fd23c87312de251117c5f761}
+      \strng{bibnamehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authorbibnamehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authornamehash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authorfullhash}{e22a4443fd23c87312de251117c5f761}
+      \strng{authorfullhashraw}{e22a4443fd23c87312de251117c5f761}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{26618907}
+      \field{issue}{2}
+      \field{journaltitle}{SN Computer Science}
+      \field{title}{AI-Based Modeling: Techniques, Applications and Research Issues Towards Automation, Intelligent and Smart Systems}
+      \field{volume}{3}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s42979-022-01043-x
+      \endverb
+      \keyw{Advanced analytics,Artificial intelligence,Automation,Data science,Industry 4.0 applications,Intelligent computing,Machine learning,Smart systems}
+    \endentry
+    \entry{Sokolova2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2adefbc8409f58c304df957e60c49341}{%
+           family={Sokolova},
+           familyi={S\bibinitperiod},
+           given={Marina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c32da83b97570a90db8231cf70f38ce}{%
+           family={Lapalme},
+           familyi={L\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{fullhash}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{fullhashraw}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{bibnamehash}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{authorbibnamehash}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{authornamehash}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{authorfullhash}{7583d9686fbf26bcb2c9608545b6c971}
+      \strng{authorfullhashraw}{7583d9686fbf26bcb2c9608545b6c971}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{03064573}
+      \field{issue}{4}
+      \field{journaltitle}{Information Processing and Management}
+      \field{title}{A systematic analysis of performance measures for classification tasks}
+      \field{volume}{45}
+      \field{year}{2009}
+      \field{pages}{427\bibrangedash 437}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.ipm.2009.03.002
+      \endverb
+      \keyw{Machine Learning,Performance evaluation,Text classification}
+    \endentry
+    \entry{syahid2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7f1500afde5ea8ce5a3b84c85a35ff4c}{%
+           family={Syahid},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c945f96563bddb9e0a7eca94655efc7}{%
+           family={Hidayat},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{fullhash}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{fullhashraw}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{bibnamehash}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{authorbibnamehash}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{authornamehash}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{authorfullhash}{ae3e250f21694b7b89657be1f1f84105}
+      \strng{authorfullhashraw}{ae3e250f21694b7b89657be1f1f84105}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Jurnal Pengelolaan Sumberdaya Alam dan Lingkungan}
+      \field{number}{1}
+      \field{title}{Analysis of the Relationship between El Niño-Southern Oscillation and Forest/Land Fires in Sumatra and Kalimantan}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{127\bibrangedash 137}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.29244/jpsl.12.1.127-137
+      \endverb
+    \endentry
+    \entry{Teixeira2021}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=bff7ac66c93c9d62617b394852172a30}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=462d6d229bead1fa5231fa4f2c9fd122}{%
+           family={Magalhães},
+           familyi={M\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71fe6e6947a6fbe9166151b8f1472fb6}{%
+           family={Ramalho},
+           familyi={R\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62373dde81e24514aec2961477ea7a34}{%
+           family={Fátima\bibnamedelima Pina},
+           familyi={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=e058d50d925085dbf97cb51bacff5f9f}{%
+           family={Gonçalves},
+           familyi={G\bibinitperiod},
+           given={Hernâni},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Inc.}%
+      }
+      \strng{namehash}{6980b797b1c69793dfe695d86049ea4c}
+      \strng{fullhash}{3794554554bcb9d160b3ac23c94005af}
+      \strng{fullhashraw}{3794554554bcb9d160b3ac23c94005af}
+      \strng{bibnamehash}{3794554554bcb9d160b3ac23c94005af}
+      \strng{authorbibnamehash}{3794554554bcb9d160b3ac23c94005af}
+      \strng{authornamehash}{6980b797b1c69793dfe695d86049ea4c}
+      \strng{authorfullhash}{3794554554bcb9d160b3ac23c94005af}
+      \strng{authorfullhashraw}{3794554554bcb9d160b3ac23c94005af}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{21582440}
+      \field{issue}{4}
+      \field{journaltitle}{SAGE Open}
+      \field{title}{Indoor Environments and Geographical Information Systems: A Systematic Literature Review}
+      \field{volume}{11}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1177/21582440211050379
+      \endverb
+      \keyw{geographical information systems,indoor spaces,systematic literature review}
+    \endentry
+    \entry{Thoha2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e3e3207f4d1cce5a50696262ec9e1f43}{%
+           family={Thoha},
+           familyi={T\bibinitperiod},
+           given={Achmad\bibnamedelima Siddik},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73e6ec9f74c674daef24159684ea9048}{%
+           family={Triani},
+           familyi={T\bibinitperiod},
+           given={Hesty},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Society for Indonesian Biodiversity}%
+      }
+      \strng{namehash}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{fullhash}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{fullhashraw}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{bibnamehash}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{authorbibnamehash}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{authornamehash}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{authorfullhash}{4c8e2166abdb0497ecd1397dbca20b77}
+      \strng{authorfullhashraw}{4c8e2166abdb0497ecd1397dbca20b77}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{20854722}
+      \field{issue}{8}
+      \field{journaltitle}{Biodiversitas}
+      \field{title}{A spatial model of forest and land fire vulnerability level in the Dairi district, North Sumatra, Indonesia}
+      \field{volume}{22}
+      \field{year}{2021}
+      \field{pages}{3319\bibrangedash 3326}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.13057/biodiv/d220827
+      \endverb
+      \keyw{Composite Mapping Analysis,Forest and land fires,Vulnerability level maps}
+    \endentry
+    \entry{Vetrita2025}{article}{}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=f293812fc0e796eb3949afddd92b59ee}{%
+           family={Vetrita},
+           familyi={V\bibinitperiod},
+           given={Yenni},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7abc746fdfd57dfcbe5978b088f60ed2}{%
+           family={Albar},
+           familyi={A\bibinitperiod},
+           given={Israr},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32298e2ac3af5ab46ae9943c443f8300}{%
+           family={Santoso},
+           familyi={S\bibinitperiod},
+           given={Imam},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c718bffc39ee227c3c1d9a4a667b3bf9}{%
+           family={Prasasti},
+           familyi={P\bibinitperiod},
+           given={Indah},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0977cf4cea9a29705182874696335f51}{%
+           family={Kartika},
+           familyi={K\bibinitperiod},
+           given={Tatik},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddde0402d6bc140f844d84d8cc1cdb8e}{%
+           family={Usman},
+           familyi={U\bibinitperiod},
+           given={Ahmad\bibnamedelima Basyiruddin},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93cd49be22cfd3f0ee0f2ab3849957d8}{%
+           family={Tosiani},
+           familyi={T\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0baacd266ff5da5ad225995b444b3f73}{%
+           family={Haryanto},
+           familyi={H\bibinitperiod},
+           given={Deny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc3bca925edd595eb65a63bfb68f2aee}{%
+           family={Endrawati},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8dbd3b0d78f1fdfd6f332c293ea67b27}{%
+           family={Famurianty},
+           familyi={F\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2fb42be38e0d4d26b1623b3c5053d3a}{%
+           family={Ulfa},
+           familyi={U\bibinitperiod},
+           given={Kurnia},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b34474df282be8c091e06118473da691}{%
+           family={Purwanto},
+           familyi={P\bibinitperiod},
+           given={Judin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis Ltd.}%
+      }
+      \strng{namehash}{cc7ebf858f80a1e078972c8b80bcdf62}
+      \strng{fullhash}{029c304f20003c18610cb5725bdd75cb}
+      \strng{fullhashraw}{029c304f20003c18610cb5725bdd75cb}
+      \strng{bibnamehash}{0a9b6e2f4f4b99bfb720e26e895c9af6}
+      \strng{authorbibnamehash}{0a9b6e2f4f4b99bfb720e26e895c9af6}
+      \strng{authornamehash}{cc7ebf858f80a1e078972c8b80bcdf62}
+      \strng{authorfullhash}{029c304f20003c18610cb5725bdd75cb}
+      \strng{authorfullhashraw}{029c304f20003c18610cb5725bdd75cb}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{13665901}
+      \field{issue}{2}
+      \field{journaltitle}{International Journal of Remote Sensing}
+      \field{title}{Monthly mapping of Indonesia's burned areas: implementation, history, techniques, and future directions}
+      \field{volume}{46}
+      \field{year}{2025}
+      \field{pages}{636\bibrangedash 660}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/01431161.2024.2421942
+      \endverb
+      \keyw{Burned area,Indonesia,fires,remote sensing}
+    \endentry
+    \entry{Wiens2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f8c666c46ece68be8e982eda723cb949}{%
+           family={Wiens},
+           familyi={W\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9e6356511abe6b623f9951d749077da}{%
+           family={Verone-Boyle},
+           familyi={V\bibinithyphendelim B\bibinitperiod},
+           given={Alissa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60898b623d8076076540a4d127d880c0}{%
+           family={Henscheid},
+           familyi={H\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54287b33867fc1fdfa5d7bfd27b4008d}{%
+           family={Podichetty},
+           familyi={P\bibinitperiod},
+           given={Jagdeep\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=341eb41983690d50719a7912dd9e5a6c}{%
+           family={Burton},
+           familyi={B\bibinitperiod},
+           given={Jackson},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons Inc}%
+      }
+      \strng{namehash}{f53835eab93f491452ac03962d98d6fb}
+      \strng{fullhash}{72af31a06796ac8ecf1a7ace2538bdcd}
+      \strng{fullhashraw}{72af31a06796ac8ecf1a7ace2538bdcd}
+      \strng{bibnamehash}{72af31a06796ac8ecf1a7ace2538bdcd}
+      \strng{authorbibnamehash}{72af31a06796ac8ecf1a7ace2538bdcd}
+      \strng{authornamehash}{f53835eab93f491452ac03962d98d6fb}
+      \strng{authorfullhash}{72af31a06796ac8ecf1a7ace2538bdcd}
+      \strng{authorfullhashraw}{72af31a06796ac8ecf1a7ace2538bdcd}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{17528062}
+      \field{issue}{3}
+      \field{journaltitle}{Clinical and Translational Science}
+      \field{title}{A Tutorial and Use Case Example of the eXtreme Gradient Boosting (XGBoost) Artificial Intelligence Algorithm for Drug Development Applications}
+      \field{volume}{18}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1111/cts.70172
+      \endverb
+      \keyw{XGBoost,boosting,machine learning,quantitative clinical pharmacology}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
