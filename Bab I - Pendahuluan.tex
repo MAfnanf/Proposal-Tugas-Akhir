@@ -5,34 +5,167 @@
 \label{chap:pendahuluan}
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
-\end{enumerate}
+Indonesia merupakan negara dengan kawasan hutan tropis terbesar ketiga di dunia
+dengan keanekaragaman hayatinya yang tergolong tinggi. Namun, ancaman terhadap kebakaran
+hutan kerap terjadi di Indonesia dan memberikan dampak terhadap ekologi, ekonomi, 
+lingkungan, kesehatan, dan sosial \autocite{Karurung2025}. Meskipun tren karhutla telah
+mengalami penurunan sesuai yang ditunjukkan pada Gambar \ref{gambar:karhutla2015-2024}, kebakaran hutan dan lahan (karhutla)
+tetap menjadi salah satu sumber utama emisi karbon. Selain itu, kejadian deforestasi hutan
+sering kali berhubungan erat dengan bencana karhutla \autocite{Vetrita2025}.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+ 	\captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/data_karhutla_2015-2024.png}
+	\caption{Karhutla di Indonesia pada tahun 2015-2024 \cite{sipongi_klhk}}
+	\label{gambar:karhutla2015-2024}
+\end{figure}
+
+Kebakaran hebat terjadi terutama saat musim kemarau dan tahun-tahun kering. Berdasarkan data 
+dari Kementerian Lingkungan Hidup dan Kehutanan (KLHK), Indonesia mengalami kebakaran hebat
+yang membakar 2,6 hektare hutan dan lahan yang dipicu oleh kekeringan akibat El Niño pada tahun 2015. 
+Peristiwa tersebut menghasilkan emisi karbon dalam jumlah besar
+disertai kabut berkepanjangan di seluruh Indonesia dan negara tetangga dengan total kerugian
+ekonomi yang berkisar antara 1,62 hingga 2,7 miliar USD (United States Dollars) \autocite{Prasetyo2022}. Selain kerugian ekonomi, 
+kebakaran hutan juga memberikan dampak yang besar bagi kesehatan dan lingkungan.
+
+Sebagaimana yang dijelaskan pada \textcite{Hein2022}, kebakaran hutan pada tahun 2015 menghasilkan 
+partikel PM\textsubscript{2.5} (partikel halus berdiameter 2,5 mikrometer yang biasanya 
+merupakan asap berbahaya) selama 24 jam dengan jumlah di atas 2.000~µg/m\textsuperscript{3}.
+Partikel ini memberikan dampak buruk pada kesehatan seperti memperburuk asma, memicu gejala pernapasan, 
+meningkatkan angka rawat inap, hingga berkontribusi terhadap kanker paru-paru. Pada jangka panjang, 
+kebakaran hutan dapat merusak lahan serta menjadi bencana yang menimbulkan hilangnya biodiversitas dan 
+menyebabkan pemanasan global \autocite{Thoha2021}.
+
+Menurut studi dari \textcite{Karurung2025}, penyebab kebakaran hutan dapat beragam mulai dari fase ENSO (\textit{El Niño-Southern Oscillation}), 
+curah hujan di sekitar Juli hingga September, faktor meteorologi dan topografi, hingga aktivitas
+manusia. Meninjau dari beberapa penyebab tersebut, pemerintah dan beberapa penelitian telah melakukan usaha untuk 
+melakukan penanganan dan pencegahan terhadap karhutla. Penelitian yang dilakukan oleh \textcite{Qamariyanti2023} menunjukkan
+bahwa di Indonesia sudah terdapat beberapa upaya pencegahan yang dilakukan oleh pemerintah pada tahun 2020 seperti
+membuat peraturan dan pasal terhadap tindakan pembukaan lahan dengan kebakaran hutan. Selain itu, Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)
+juga telah membuat pendekatan identifikasi karhutla melalui perhitungan Fire Weather Index yang memanfaatkan faktor 
+meteorologis dalam melakukan identifikasi. Walaupun begitu, Fire Weather Index yang dipandang sebagai perhitungan indeks kebakaran
+yang telah teruji secara internasional belum mengintegrasikan faktor-faktor lainnya yang menurut beberapa studi menjadi
+penyebab terjadinya bencana karhutla di Indonesia.
+
+Di sisi lain, pemantauan karhutla di Indonesia sudah mulai bergantung pada data satelit \textit{hotspot} harian dari produk 
+Visible Infrared Imaging Radiometer Suite (VIIRS) 375 m. Produk ini kemudian diintegrasikan dengan sistem informasi kebakaran nasional.
+Namun, studi oleh \textcite{} menemukan bahwa data VIIRS hanya menemukan sekitar 52-53\% kejadian lapangan yang memiliki \textit{hotspot}, 
+sedangkan untuk kebakaran yang lebih besar dari 14 hektare tingkat deteksinya meningkat hingga sekitar 83\%. Hal ini menunjukkan masih 
+adanya beberapa kebakaran kecil dan menengah yang tidak terdeteksi oleh satelit. 
+
+Dalam beberapa tahun terakhir, teknologi \textit{remote sensing} dan \textit{geospatial} telah muncul sebagai
+alat untuk mendeteksi dan memetakan kebakaran menggunakan faktor alam. Bahkan, pengembangan teknologi telah mencapai
+pemanfaatan integrasi \textit{Machine Learning} (ML) dalam melakukan pemantauan dengan lebih efektif. Akan tetapi, 
+integrasi data satelit dengan ML atau \textit{Deep Learning} (DL) untuk 
+prediksi dan pemodelan kebakaran masih merupakan bidang yang relatif jarang dieksplorasi di wilayah Asia Tenggara
+dan memiliki potensi besar untuk dikembangkan \autocite{Eaturu2025}.
+
+Selain itu, pemanfaatan model ML dalam tindakan prediktif kebakaran hutan sering kali hanya 
+berfokus kepada hasil atau akurasi dari model. Padahal dalam memberikan informasi, alasan dalam penentuan 
+hasil prediktif sangat diperlukan untuk memberikan wawasan yang signifikan. Kurangnya transparansi saat 
+menggunakan model ML merupakan hambatan bagi para pengelola kebakaran hutan karena 
+algoritma ini dianggap sebagai "\textit{black box}" sehingga sulit memahami hasil yang diberikan oleh model \autocite{Abdollahi2023}.
+Maka dari itu, pendekatan \textit{Explainable Artificial Intelligence} (XAI) perlu diterapkan dalam konteks
+kebakaran hutan untuk menginterpretasikan kontribusi dari faktor-faktor terhadap hasil model. 
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
+Berdasarkan latar belakang yang telah dijelaskan dapat diketahui bahwa saat ini langkah prediktif terhadap kebakaran hutan masih dalam tahap penelitian dan kurang dieksplorasi 
+khususnya di wilayah Asia Tenggara. Selain itu, sistem yang sudah ada saat ini terkadang menghambat pengambilan keputusan pemangku kepentingan, khususnya pada langkah mitigasi. Model prediktif 
+dapat dimanfaatkan untuk memberikan wawasan dan acuan dasar dalam menyusun langkah mitigasi seperti penentuan wilayah patroli. Meskipun BMKG saat ini menyediakan indeks bahaya kebakaran berbasis 
+Fire Weather Index yang valid secara meteorologis untuk pemantauan harian, indeks yang tersedia masih terbatas pada variabel meteorologis dan belum mengintegrasikan komponen biofisik maupun antropogenik.
+Walaupun sistem tersebut sudah menerapkan pendekatan \textit{forecasting}, faktor yang digunakan masih berfokus ke faktor meteorologis.
+
+Oleh karena itu, langkah prediktif diperlukan untuk memberikan informasi terkait indikator karhutla dengan menggunakan faktor yang lebih luas 
+dan relevan menurut banyak penelitian sekaligus memberikan acuan informasi yang lebih cepat sebagai bahan perancangan mitigasi. Namun, 
+pendekatan prediktif seperti memanfaatkan ML sering kali menimbulkan keraguan disebabkan hasil prediksi yang diberikan bersifat \textit{black box} sehingga hasil
+yang diberikan masih diragukan oleh pemangku kepentingan. Berdasarkan penjelasan sebelumnya, didefinisikan beberapa rumusan masalah sebagai berikut.
 \begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
+	\item	Bagaimana mengembangkan model prediksi risiko kebakaran hutan dan lahan berbasis ML dengan memanfaatkan faktor-faktor penyebab karhutla?
+	\item	Bagaimana cara menerapkan pendekatan XAI untuk menjelaskan peran faktor-faktor utama yang mempengaruhi hasil prediksi risiko terjadinya karhutla?
+	\item	Bagaimana bentuk penerjemahan hasil prediksi sehingga dapat memberikan wawasan yang relevan untuk mendukung keputusan mitigasi?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
+Berdasarkan rumusan masalah yang telah dituliskan pada bagian sebelumnya, berikut adalah tujuan utama dari pengerjaan tugas akhir ini.
 
+\begin{enumerate}
+	\item	Membangun model prediksi risiko kebakaran hutan dan lahan berbasis ML dengan memanfaatkan data hotspot satelit, informasi meteorologi, dan faktor lingkungan pada suatu wilayah studi di Indonesia.
+	\item	Menerapkan pendekatan XAI untuk menginterpretasikan faktor-faktor utama yang memengaruhi hasil prediksi risiko karhutla pada model yang dikembangkan.
+	\item	Merancang prototipe visualisasi spasial yang menyajikan hasil prediksi risiko karhutla secara informatif dan mudah dipahami sebagai bahan pertimbangan dalam upaya pencegahan dan mitigasi.
+\end{enumerate}
+
+Keberhasilan tugas akhir ini dievaluasi melalui pencapaian akurasi model yang melampaui 0,80 dalam memprediksi titik api dan nilai F1-score mencapai 0,75 untuk kelas risiko tinggi serta kemampuan sistem dalam memberikan alasan di balik hasil prediksi model dan 
+penyajian informasi secara informatif dan jelas yang dibungkus dalam bentuk prototipe visual. Selain itu, nilai \textit{fidelity} yang ditargetkan untuk XAI adalah sekitar 0,80 sehingga 
+penjelasan yang dihasilkan diharapkan cukup konsisten dengan keputusan model. Selain itu, tugas akhir ini tidak ditujukan sebagai langkah untuk menggantikan sistem Fire Weather Index yang telah
+digunakan saat ini, tugas akhir ini akan tetap memanfaatkan indeks tersebut sebagai salah satu masukan dalam model prediksi risiko terjadinya karhutla.
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
+Adapun untuk batasan masalah dalam pengerjaan tugas akhir ini adalah sebagai ber-
+ikut.
 
+\begin{enumerate}
+	\item	Untuk mengurangi masalah keterbatasan data dan beban infrastruktur pengembangan, tugas akhir difokuskan pada wilayah Kalimantan dan menggunakan model ML.
+	\item	Jenis data yang digunakan dibatasi pada data satelit hotspot, data meteorologi, dan data biofisik yang tersedia secara terbuka.
+	\item	Prototipe penyajian hasil prediksi bersifat demonstratif dan berbasis data historis yang telah diproses secara \textit{offline}. 
+	\item	Cakupan waktu yang diprediksi adalah skala bulanan untuk mengurangi kompleksitas data dan mendukung perencanaan strategis.
+\end{enumerate}
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
+Metodologi yang digunakan dalam tugas akhir ini mengacu pada kerangka kerja CRISP-DM (\textit{Cross-Industry Standard Process for Data Mining}).
+CRISP-DM dipilih karena menyediakan tahapan yang sistematis untuk mengembangkan solusi berbasis data yang dimulai dari pemahaman masalah hingga pembangunan model.
+Metodologi ini diadaptasi agar sesuai dengan konteks pemodelan risiko karhutla dan pengembangan prototipe visual yang disertai penerapan
+XAI.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/crisp-dm.png}
+	\caption{Metodologi CRISP-DM}
+	\label{gambar:metodologi_crisp-dm}
+\end{figure}
+
+Menurut Gambar \ref{gambar:metodologi_crisp-dm}, tahapan metodologi yang akan dilaksanakan adalah sebagai berikut.
+
 \begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
+	\item	\textit{Business Understanding} \\
+	Pada tahap ini dilakukan pemahaman terhadap konteks kebakaran hutan dan lahan di wilayah studi beserta dampak
+	yang ditimbulkan. Kegiatan yang dilakukan meliputi studi literatur mengenai karhutla di Indonesia, penyebab dan
+	dampak dari karhutla, serta identifikasi kebutuhan akan informasi risiko sebagai langkah pemenuhan
+	tindakan mitigasi. Hasil dari tahap ini adalah pemahaman konteks, perumusan masalah dan tujuan, pemodelan,
+	ruang lingkup wilayah studi, serta kriteria keberhasilan pengembangan model dan prototipe. Selain itu, langkah pemahaman
+	diawali dengan melakukan riset dan kajian untuk memahami permasalahan dan pendekatan solusi yang dilakukan dengan memanfaatkan 
+	artikel-artikel terbitan tahun 2021 ke atas agar memiliki relevansi yang signifikan. Artikel yang digunakan diusahakan memiliki reputasi yang baik dan berasal
+	dari jurnal yang terindeks Scopus atau Sinta. Namun, beberapa artikel yang terbit di bawah tahun 2021 terkadang digunakan
+	sebagai dasar atau dukungan studi.
+	\item	\textit{Data Understanding} \\
+	Tahap ini berfokus pada pengenalan dan eksplorasi data yang akan digunakan. Data yang dimaksud mencakup 
+	data \textit{hotspot} atau kebakaran dari satelit, data meteorologi, serta data lingkungan/biofisik wilayah studi. 
+	Kegiatan meliputi identifikasi sumber data, pengumpulan data historis, analisis struktur dan format data, 
+	serta eksplorasi awal pola spasial dan temporal kejadian karhutla. Selain itu, dilakukan pula penilaian awal 
+	terhadap kualitas data, seperti keberadaan nilai hilang, inkonsistensi, atau ketidakseimbangan kelas antara 
+	kejadian kebakaran dan non-kebakaran.
+	\item	\textit{Data Preparation} \\
+	Pada tahap ini dilakukan pengolahan data agar siap digunakan dalam pemodelan. Kegiatan yang dilakukan antara 
+	lain pemilihan periode waktu yang akan dianalisis, pembatasan data pada wilayah studi, pembentukan representasi spasial 
+	(pembentukan \textit{grid}), penggabungan data hotspot dengan data meteorologi dan data lingkungan, serta 
+	pembersihan data (penanganan nilai hilang, duplikasi, dan nilai yang tidak wajar). Pada tahap ini juga dilakukan
+	analisis terhadap fitur yang relevan dengan risiko karhutla serta pembagian data menjadi pelatihan dan pengujian.
+	\item	\textit{Modelling} \\
+	Tahap pemodelan berfokus pada pembangunan model \textit{Supervised Machine Learning} untuk memprediksi risiko kebakaran hutan dan
+	lahan. Kegiatan meliputi pemilihan model yang sesuai, skema pelatihan dan validasi, serta penyesuaian parameter model.
+	Pada tahap ini juga dilakukan penerapan teknik XAI sebagai langkah untuk menjelaskan kontribusi masing-masing fitur terhadap
+	hasil prediksi.
+	\item	\textit{Evaluation} \\
+	Evaluasi model dilakukan dengan meninjau nilai kuantitatif yang dihasilkan dengan menggunakan beberapa metrik utama yang umum
+	digunakan pada evaluasi model, termasuk Accuracy, Precision, Recall, F1-Score, serta Area Under ROC Curve (AUC-ROC). 
+	Selain itu evaluasi kualitatif juga dilakukan berdasarkan hasil interpretasi dari XAI untuk menilai apakah faktor-faktor
+	yang muncul selaras dengan domain terkait karhutla di wilayah studi.
+	\item	\textit{Deployment} \\
+	Pada tahap terakhir, hasil pemodelan dan interpretasi XAI disusun dalam bentuk prototipe penyajian hasil prediksi berupa 
+	visualisasi spasial yang menampilkan peta risiko karhutla pada wilayah studi. Prototipe ini dirancang agar informasi risiko 
+	dan faktor-faktor penjelas dapat disajikan secara sederhana dan objektif sehingga mudah dipahami oleh pengguna.
+
 \end{enumerate}

@@ -2,10 +2,307 @@
 % BAB V RENCANA SELANJUTNYA
 % ==========================================
 \chapter{RENCANA SELANJUTNYA}
-\label{chap:rencana-selanjutnya}
-Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
+\section{Rencana implementasi}
+Mengacu pada metodologi CRISP-DM yang telah dijelaskan pada Bab 1, rencana implementasi akan dilakukan dengan mengiktui
+langkah-langkah yang terdapat pada metodologi ini. Selain itu, penjelasan seperti lingkungan pengembangan disertai 
+alat-alat yang digunakan juga dibahas pada bagian ini. Untuk memberikan bayangan implementasi, diagram alur pengembangan dan 
+linimasa disusun pada bagian ini.
+\subsection{Alur Implementasi Teknis}
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/diagram-alur-rencana-implementasi.png}
+	\caption{Diagram alur rencana implementasi}
+	\label{gambar:diagram-implementasi}
+\end{figure}
+Alur keseluruhan implementasi digambarkan pada Gambar \ref{gambar:diagram-implementasi} yang memperlihatkan bagaimana proses 
+implementasi dirancang dengan mengikuti metodologi yang telah dibahas sebelumnya. Setiap blok merepresentasikan 
+satu kelompok kegiatan utama yang akan dikerjakan selama tugas akhir.
 \begin{enumerate}
-\item	Rencana implementasi, termasuk alat dan bahan yang diperlukan, lingkungan, konfigurasi, biaya, dan sebagainya.
-\item	Desain pengujian dan evaluasi, misalnya metode verifikasi dan validasi.
-\item	Analisis risiko dan mitigasi, misalnya tindakan selanjutnya jika ada yang tidak berjalan sesuai rencana.
+    \item \textit{Data Collection} \\
+    Tahap ini sebenarnya sempat dilakukan pada pengembangan proposal tugas akhir dan mendapatkan data \textit{hotspot} dari VIIRS. Namun, 
+    disebabkan hasil studi literatur sebelumnya menemukan bahwa bencana karhutla dapat diidentifikasi lewat berbagai faktor, tahap ini 
+    dilakukan kembali sebagai lanjutan dari langkah \textit{data understanding} yang telah dilakukan pada Bab III. Data \textit{hotspot} akan
+    dilengkapi dengan tiga kelompok data penjelas, yaitu faktor meteorologis (curah hujan, suhu, kelembapan, dan indeks iklim), faktor biofisik 
+    (tutupan lahan, lahan gambut, indeks vegetasi, topografi), dan faktor antropogenik (kedekatan dengan pemukiman).
+    \item \textit{Data Understanding} \\
+    Setelah data terkumpul, langkah \textit{Exploratory Data Analysis} (EDA) dan penelaahan metadata dilakukan untuk memahami tujuan dan maksud data,
+    distribusi data, pola dasar, dan kualitas data. Pada tahap ini, definisi ilmiah yang terdapat pada data akan dikaji untuk memahami maksud fitur tersebut
+    dan korelasinya dengan faktor penyebab karhutla berdasarkan studi literatur sebelumnya. Kegiatan ini memastikan bahwa data yang masuk ke tahap berikutnya 
+    memang relevan dengan tujuan pemodelan.
+    \item \textit{Data Preparation} \\
+    Pada tahap ini, data akan disiapkan agar dapat menjadi data yang bersih untuk dijadikan bahan \textit{training} oleh model prediktif. Output pada tahap ini adalah \textit{dataset} tabular yang terstruktur per kombinasi \textit{grid} dalam kurun waktu bulan dan siap untuk digunakan pada tahap
+    pemodelan. Kegiatan \textit{data preparation} meliputi:
+    \begin{enumerate}
+        \item \textit{Data cleaning} dan \textit{filtering} merupakan langkah untuk menangani \textit{missing value}, kesalahan pencatatan, data duplikasi,
+        dan \textit{outlier} pada data.
+        \item \textit{Grid equalization and integration} merupakan langkah untuk melakukan penyamaan resolusi spasial ke \textit{grid} analisis (dalam bentuk 1 km x 1 km) dan
+        melakukan integrasi seluruh layer spasial ke dalam kerangka grid yang sama. Hal ini dilakukan untuk mendapatkan informasi faktor penyebab suatu titik api 
+        muncul pada \textit{grid} tertentu.
+        \item \textit{Data transformation} merupakan langkah untuk melakukan transformasi data yang diperlukan (normalisasi, pengkodean variabel kategorik, dan lainnya).
+        \item \textit{Feature engineering and selection} merupakan langkah untuk melakukan pemrosesan fitur seperti pemanfaatan fitur FWI yang dikonversi menjadi bulanan dan memilih fitur
+        mana yang paling berkorelasi dengan label agar dapat menghilangkan fitur yang menjadi \textit{noise}. Pada langkah ini juga dilakukan pemrosesan terhadap label data yaitu data \textit{hotspot}
+        sehingga memiliki tiga kelas risiko (rendah, sendang, dan tinggi) berdasarkan \textit{threshold} yang akan ditentukan.
+        \item \textit{Class balancing} merupakan langkah untuk melakukan penyeimbangan data agar distribusi kelas tidak timpang ke salah satu kelas. Hal ini dilakukan agar model
+        tidak terlalu bias terhadap kelas mayoritas.
+    \end{enumerate}
+    \item \textit{Modelling} \\
+    Model yang dikembangkan adalah Random Forest dan XGBoost, sesuai dengan rancangan pada Bab IV. \textit{Dataset} yang telah siap digunakan akan dibagi menjadi data latih dan validasi.
+    Kedua model dilatih dan dibandingkan berdasarkan metrik kinerja yang ditetapkan (akurasi, \textit{precision}, \textit{recall}, \textit{F1-score}, serta nilai AUC dan kurva ROC). Proses ini dapat dilakukan secara iteratif dengan penyesuaian \textit{hyperparameter} hingga memperoleh 
+    performa yang memenuhi kriteria. Model dengan kinerja terbaik dipilih sebagai model utama yang akan digunakan untuk menghasilkan prediksi risiko karhutla.
+    Model akan dikembangkan mengikuti data label sehingga akan menghasilkan tiga tingkat risiko atau kerentanan karhutla, yaitu rendah, sedang, dan tinggi.
+    \item \textit{Explainable AI} dan \textit{Evaluation} \\
+    Metode XAI berupa SHAP dan PFI diterapkan ke model terbaik berdasarkan hasil seleksi sebelumnya. PFI digunakan untuk memperoleh gambaran penting fitur secara global, sedangkan SHAP
+    digunakan untuk menjelaskan kontribusi fitur secara lokal pada masing-masing \textit{grid}. Hasil prediksi dan penjelasan ini kemudian dievaluasi menggunakan metrik klasifikasi 
+    seperti akurasi, \textit{precision}, \textit{recall}, \textit{F1-score}, serta nilai AUC dan kurva ROC.
+    \item \textit{Deployment} \\
+    Tahap ini merupakan tahap terakhir yang masuk dalam skala \textit{prototype}. Model prediksi risiko dan hasil penjelasan model digabungkan serta disajikan dalam bentuk geospasial yang memberikan informasi 
+    risiko terjadinya karhutla bulanan serta ringkasan faktor utama yang memengaruhi munculnya risiko tersebut. Prototipe penyajian ini diharapkan mampu menampilkan kondisi saat ini, prediksi \textit{hotspot}, serta
+    penjelasan faktor sehingga dapat dijadikan ilustrasi bagi pemangku kepentingan dalam mengambil keputusan mitigasi.
 \end{enumerate}
+\subsection{Lingkungan Pengembangan dan Daftar Alat}
+Lingkungan pengembangan dan alat yang digunakan dalam tugas akhir dirangkum pada Tabel \ref{tbl:lingkungan-dan-alat}. 
+Pemilihan alat berfokus pada ketersediaan, dukungan terhadap analisis spasial, keandalan sebagai bahan latihan prediktif, serta efisiensi biaya.
+Sebagian besar alat yang digunakan merupakan perangkat lunak yang bertujuan untuk membantu langkah pencarian data, pemrosesan data, pengembangan model, hingga 
+pengembangan visual untuk penyajian informasi. Namun, beberapa perangkat lunak tidak bisa digunakan secara terbuka, seperti perangkat untuk melakukan 
+pelatihan model. Hal tersebut disebabkan karena infrastruktur yang dimiliki tidak cukup untuk melakukan pelatihan model. Informasi detail
+terkait alat yang akan digunakan tercantum pada Tabel \ref{tbl:lingkungan-dan-alat}. 
+
+\begin{table}[H]
+    \centering
+    \caption{Lingkungan pengembangan dan daftar alat yang digunakan}
+    \label{tbl:lingkungan-dan-alat}
+    \begin{tabular}{| p{2cm} | p{4cm} | p{6cm} |}
+    \hline
+    \textbf{Kategori} & \textbf{Alat / Platform} & \textbf{Fungsi Utama} \\
+    \hline
+    Hardware lokal &
+    Laptop dengan prosesor Intel Core i5 Gen-11, RAM 16 GB, GPU NVIDIA RTX 3050 4 GB &
+    Komputasi untuk mengembangkan sistem prediksi karhutla. \\
+    \hline
+    \textit{Cloud computing} &
+    Google Cloud (mesin virtual dengan GPU) &
+    Pelatihan model Random Forest dan XGBoost apabila beban komputasi melebihi kapasitas laptop lokal. \\
+    \hline
+    Software SIG &
+    QGIS &
+    Pengolahan data spasial, filter peta, \textit{overlay}, pemotongan wilayah studi, dan pembentukan grid 1 km $\times$ 1 km. \\
+    \hline
+    Software analisis &
+    Python dan Jupyter Notebook &
+    Lingkungan utama untuk membuat skrip pemrosesan data, pelatihan model, evaluasi, dan penerapan \textit{explainable AI}. \\
+    \hline
+    Pustaka Python &
+    \texttt{pandas}, \texttt{NumPy}, \texttt{scikit-learn}, \texttt{xgboost}, \texttt{shap}, \texttt{GeoPandas}, dan pustaka terkait lainnya &
+    Pustaka untuk membantu pengolahan data tabular dan numerik, implementasi model Random Forest dan XGBoost, perhitungan nilai SHAP. \\
+    \hline
+    Layanan data &
+    NASA FIRMS, BMKG, KLHK, Climate Engine, Google Earth Engine (GEE) &
+    Sumber data hotspot, variabel meteorologis, biofisik, dan antropogenik yang digunakan sebagai masukan pemodelan risiko. \\
+    \hline
+    Prototipe visual &
+    QGIS layout, pustaka Python (Folium) &
+    Penyusunan peta risiko karhutla dan prototipe tampilan geospasial sederhana untuk mendemonstrasikan hasil model. \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{| p{3cm} | p{4cm} | p{4cm} |}
+    \hline
+    Aspek & Layanan & Perkiraan biaya per bulan (Rp) \\
+    \hline
+    Komputasi untuk pelatihan model &
+    Google Colab Pro &
+    170.000 \\
+    \hline
+    Penyimpanan dan pengelolaan data &
+    Google One (Google Drive, paket Google AI Pro) &
+    158.000 \\
+    \hline
+    \multicolumn{2}{|r|}{\textbf{Total}} & \textbf{328.000} \\
+    \hline
+    \end{tabular}
+    \caption{Rencana pemanfaatan layanan berbayar dan estimasi biaya}
+    \label{tbl:estimasi-biaya}
+\end{table}
+
+Alat yang digunakan tentunya tidak gratis dan memiliki biaya sehingga pencatatan terkait
+biaya dicantumkan pada Tabel \ref{tbl:estimasi-biaya}. Biaya yang dicantumkan disusun dalam kurun
+waktu bulan. Pengembangan sistem dilakukan dalam waktu kurang lebih 4 bulan sehingga total biaya
+yang akan dikeluarkan adalah Rp 1.312.000.
+
+
+\subsection{Linimasa Pengerjaan}
+
+Linimasa pelaksanaan tugas akhir dirangkum pada Tabel \ref{tbl:linimasa-ta}. Setiap periode 
+menggambarkan fokus kegiatan utama yang akan dikerjakan hingga tahap implementasi dan evaluasi
+prototipe selesai.
+
+\begin{table}[h]
+    \centering
+    \caption{Linimasa penyelesaian tugas akhir}
+    \label{tbl:linimasa-ta}
+    \begin{tabular}{| p{4cm} | p{8cm} |}
+    \hline
+    \textbf{Waktu} & \textbf{Kegiatan} \\
+    \hline
+    September 2024 -- Oktober 2024 &
+    Pencarian topik tugas akhir. \\
+    \hline
+    Oktober 2024 -- Desember 2024 &
+    \textit{Business Understanding} dan penyusunan proposal tugas akhir. \\
+    \hline
+    Desember 2024 &
+    \textit{Data collecting} dan \textit{Exploratory Data Analysis} (tahap \textit{data understanding}). \\
+    \hline
+    Januari 2025 -- Juni 2025 &
+    \textit{Data collecting}, \textit{data understanding}, \textit{data preparation}, \textit{modelling}, \textit{evaluation}, dan \textit{deployment} secara iteratif hingga prototipe sistem prediksi risiko karhutla selesai. \\
+    \hline
+    \end{tabular}
+\end{table}
+
+
+\section{Rencana Verifikasi dan Evaluasi}
+Subbab ini membahas tentang verifikasi dan evaluasi dari sistem model prediktif. Pengujian ini dilakukan
+agar sistem dapat bekerja sesuai dengan tujuan yang telah ditentukan sebelumnya. 
+Langkah validasi dilakukan dengan melakukan verifikasi terhadap modul prediksi dan hasil dari XAI dalam 
+memberikan penjelasan hasil prediksi.
+
+\subsection{Verifikasi Model Prediksi dan XAI}
+Langkah verifikasi dilakukan untuk memastikan model prediksi dan XAI yang dikembangkan dapat berjalan dengan baik
+dan relevan dengan bahasan.
+\subsubsection{Verifikasi Model Prediksi}
+Verifikasi dilakukan untuk memastikan bahwa seluruh komponen modul prediksi
+telah terimplementasi sesuai desain pada Subbab V.1.1 dan tidak menghasilkan
+kesalahan logika. Metode pengujian yang direncanakan meliputi:
+
+\begin{enumerate}
+    \item Verifikasi struktur dan konsistensi data \\
+    Memeriksa kembali jumlah rekaman dan distribusi kelas sebelum dan sesudah tahap \textit{data preparation}, memastikan setiap kombinasi grid--bulan memiliki label yang benar dan tidak terjadi kehilangan data yang tidak diinginkan.
+    \item Uji alur pemodelan \\
+    Menjalankan alur pelatihan pada sampel data untuk memastikan seluruh fungsi berjalan, tidak terjadi error, dan menghasilkan keluaran (prediksi dan metrik) dengan format yang sesuai.
+    \item Reproduksibilitas hasil \\
+    Mengatur \textit{random seed} dan mendokumentasikan konfigurasi eksperimen untuk menilai konsistensi dari hasil metrik.
+\end{enumerate}
+
+Modul prediksi dianggap lolos verifikasi apabila:
+\begin{enumerate}
+    \item Tidak terdapat error pada saat alur pelatihan dan prediksi dijalankan.
+    \item Jumlah dan struktur data pada setiap tahap konsisten dengan rancangan.
+    \item Prediksi yang dihasilkan dapat dipetakan kembali.
+\end{enumerate}
+
+\subsubsection{Verifikasi XAI}
+Verifikasi yang dilakukan untuk XAI adalah dengan menyusun beberapa pertanyaan analitis terhadap hasil prediksi. Pertanyaan tersebut di antaranya:
+\begin{enumerate}
+    \item Mengapa \textit{grid} A pada bulan Juli diklasifikasikan dengan risiko tinggi?
+    \item Faktor apa yang paling memengaruhi peningkatan risiko di Kalimantan Tengah pada beberapa bulan ini?
+\end{enumerate}
+
+Untuk memberikan verifikasi, sebenarnya pertanyaan yang diberikan dapat melebihi jumlah kedua pertanyaan di atas. Jadi kedua pertanyaan tersebut merupakan contoh gambaran tentang bagaimana melakukan verifikasi terhadap XAI.
+Dengan memberikan pertanyaan tersebut, apabila XAI dapat memberikan penjelasan yang dapat menjawab pertanyaan tersebut, verifikasi terhadap XAI dapat dinyatakan berhasil.
+Hal ini karena XAI berhasil menjadi penjelas dari kondisi \textit{blackbox} yang dialami oleh model dan dapat membantu pemangku kepentingan dalam memahami kondisi 
+dan mengambil keputusan.
+\subsection{Validasi Model Prediksi dan XAI}
+
+Validasi bertujuan menilai apakah model prediksi yang dikembangkan memiliki performa yang memadai dan apakah hasil \textit{explainable AI} selaras 
+dengan pengetahuan domain. Metode pengujian dan kriteria keberhasilan dirangkum sebagai berikut.
+
+\subsubsection{Validasi Model Prediksi}
+Validasi kuantitatif model prediksi dilakukan menggunakan data uji yang tidak 
+digunakan pada saat pelatihan. Dua metrik utama yang digunakan adalah:
+
+\begin{enumerate}
+    \item Akurasi rata-rata dari model adalah 0,80 sesuai yang telah ditetapkan pada tujuan sebelumnya.
+    \item \textit{F1-score} untuk kelas risiko tinggi adalah 0,75.
+\end{enumerate}
+
+\subsubsection{Validasi hasil XAI}
+
+Untuk komponen XAI, validasi kuantitatif dilakukan dengan mengukur 
+\textit{fidelity}, yaitu seberapa baik penjelasan mengikuti perilaku model 
+asli. \textcite{Kabir2025} menempatkan \textit{fidelity} sebagai salah satu 
+dimensi utama dalam evaluasi XAI, berdampingan dengan aspek lain seperti 
+komprehensibilitas dan stabilitas. Dalam tugas akhir ini, \textit{fidelity} lokal didefinisikan sebagai tingkat 
+kesesuaian antara prediksi model asli $f(x)$ dan model penjelas yang lebih 
+sederhana $g(x)$ (misalnya model yang dibangun dari atribut penting hasil SHAP) 
+pada sejumlah sampel uji di sekitar suatu wilayah. Untuk kasus klasifikasi, 
+salah satu bentuk perhitungannya dapat ditulis sebagai:
+
+\[
+\text{Fidelity} = \frac{1}{N} \sum_{i=1}^{N} \mathbb{I}\big(f(x_i) = g(x_i)\big),
+\]
+
+Target yang ditetapkan dalam tugas akhir ini adalah nilai \textit{fidelity} 
+rata-rata sekitar 0,80 pada beberapa sampel wilayah uji. Nilai ini dianggap 
+cukup untuk menunjukkan bahwa pola kontribusi fitur yang ditampilkan XAI 
+tidak menyimpang jauh dari keputusan yang diambil model, sekaligus realistis 
+untuk prototipe awal.
+
+\section{Analisis Risiko dan Mitigasi}
+
+Pelaksanaan tugas akhir yang melibatkan pengolahan data spasial berskala besar dan pengembangan model 
+\textit{machine learning} memiliki sejumlah risiko teknis maupun nonteknis. Pada subbab ini diidentifikasi 
+beberapa risiko utama yang dapat memengaruhi kualitas hasil maupun kelancaran jadwal, beserta strategi mitigasi yang direncanakan. 
+Analisis dilakukan secara kualitatif dengan menilai tingkat kemungkinan (\textit{likelihood}) dan dampak (\textit{impact}) setiap risiko pada skala 
+rendah, sedang, dan tinggi.
+
+\begin{longtable}{| p{2.5cm} | p{2.5cm} | p{1.5cm} | p{6cm} |}
+\caption{Identifikasi risiko dan rencana mitigasi}
+\label{tbl:risiko-mitigasi} \\
+\hline
+\textbf{Risiko} & \textbf{Kemungkinan} & \textbf{Dampak} & \textbf{Strategi mitigasi} \\
+\hline
+\endfirsthead
+
+\caption[]{Identifikasi risiko dan rencana mitigasi (lanjutan)}\\
+\hline
+\textbf{Risiko} & \textbf{Kemungkinan} & \textbf{Dampak} & \textbf{Strategi mitigasi} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Ketersediaan dan kelengkapan data faktor penjelas &
+Sedang &
+Tinggi &
+Mengutamakan pengumpulan variabel yang paling kritis (misalnya
+hotspot, curah hujan, lahan gambut, dan tutupan lahan) lebih dahulu.
+Mencari data berdasarkan artikel sehingga memiliki banyak alternatif sumber yang bisa digunakan atau memanfaatkan data historikal saja sebagai alat pelatihan model. \\
+\hline
+
+Kualitas data yang rendah (missing value, inkonsistensi, noise) &
+Rendah &
+Sedang &
+Melakukan \textit{exploratory data analysis} untuk mengidentifikasi masalah kualitas data, menerapkan prosedur pembersihan, mencatat variabel yang kualitasnya sangat rendah dan, bila perlu, mengevaluasi ulang kelayakan variabel tersebut untuk dimasukkan ke model. \\
+\hline
+
+Keterbatasan sumber daya komputasi &
+Tinggi &
+Rendah &
+Memanfaatkan layanan \textit{cloud computing} seperti Google Colab sebagai alat untuk melakukan pelatihan data dan pengembangan prototipe. \\
+\hline
+
+Performa model tidak mencapai kriteria keberhasilan &
+Sedang &
+Tinggi &
+Melakukan langkah iterasi dan \textit{hyperparameter} untuk mencari konfigurasi terbaik dari model. Teknik \textit{feature engineering} juga dilakukan untuk menyesuaikan data agar hasil model lebih baik. \\ 
+\hline
+
+Biaya layanan komputasi awan melebihi estimasi &
+Sedang &
+Sedang &
+Mengatur penggunaan pada layanan (hanya digunakan saat benar-benar melakukan pengembangan model dan prototipe) sehingga dapat menekan anggaran. \\
+\hline
+
+\end{longtable}
+
+Analisis pada Tabel \ref{tbl:risiko-mitigasi} menunjukkan bahwa risiko utama berasal dari aspek ketersediaan data, keterbatasan komputasi, dan kemungkinan performa model yang belum memenuhi target awal. Dengan adanya strategi mitigasi yang direncanakan sejak awal, diharapkan dampak risiko-risiko tersebut dapat dikendalikan sehingga tujuan utama tugas akhir tetap dapat dicapai dalam batas waktu dan sumber daya yang tersedia.

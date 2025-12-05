@@ -3,7 +3,105 @@
 % ==========================================
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
-Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
-beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
-Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
-penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab \ref{chap:analisis-masalah}).
+Bab ini menjelaskan tentang desain yang diajukan berdasarkan hasil penentuan solusi alternatif pada Bab III. Penjelasan yang dilakukan
+berupa ilustrasi diagram sehingga terdapat konsep sistem yang menggambarkan bentuk sistem solusi. 
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.8\textwidth]{image/model-konseptual-to-be.png}
+	\caption{Model konseptual \textit{to-be}}
+	\label{gambar:model-konseptual-tobe}
+\end{figure}
+
+\begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/sistem-prediktif.png}
+	\caption{Sistem prediktif dengan ML, XAI, dan penyajian informasi visual}
+	\label{gambar:sistem-prediktif}
+\end{figure}
+
+Berdasarkan analisis masalah dan pemilihan alternatif pada Bab III, solusi yang dipilih adalah pengembangan sistem prediksi potensi
+karhutla berbasis ML dan XAI yang menyajikan informasi risiko dalam bentuk
+peta dan ringkasan faktor utama.
+Sistem ini ditujukan untuk melengkapi sistem pemantauan yang sudah ada sehingga 
+pemangku kepentingan dapat memperoleh informasi risiko yang lebih proaktif untuk
+mendukung penentuan prioritas mitigasi.
+
+Gambar \ref{gambar:model-konseptual-tobe} menunjukkan model konseptual setelah penambahan solusi usulan (\textit{to-be}). Meninjau dari 
+kondisi saat ini (\textit{as-is}) yang ditunjukkan pada Gambar \ref{gambar:model-konseptual-saat-ini}, langkah yang dilakukan masih bersifat reaktif setelah mendapatkan 
+acuan informasi titik api berdasarkan data dari satelit untuk merencanakan tindakan pengelolaan seperti 
+patroli. Namun, kondisi \textit{to-be} yang ditandai dengan kotak berwarna oranye memberikan pendekatan yang berbeda
+dari kondisi \textit{as-is}, yaitu menggunakan model prediktif dalam memberikan informasi yang lebih cepat.
+Modul prediksi menerima data yang sudah dikumpulkan, menghasilkan level risiko karhutla per wilayah analisis, dan 
+mengirimkannya ke sistem pemantauan sehingga indikator potensi karhutla kini mempertimbangkan informasi risiko prediktif
+di samping kondisi yang sedang berlangsung.
+
+Gambar \ref{gambar:sistem-prediktif} menunjukkan konsep desain sistem prediksi potensi
+karhutla yang diusulkan. Secara ringkas, tahapan utama sistem dijelaskan sebagai berikut.
+\begin{enumerate}
+    \item Pengumpulan data historis bulanan \\
+    Sistem mengumpulkan data historis titik \textit{hotspot}, faktor antropogenik, faktor biofisik, dan
+    faktor meteorologis untuk setiap \textit{grid} pada wilayah Provinsi Kalimantan. Seluruh data dikumpulkan 
+    dalam satuan waktu bulanan sehingga setiap rekaman mempresentasikan kombinasi \textit{grid}-bulan. Skala
+    bulanan dipilih karena relevan dengan perencanaan operasional mitigasi sekaligus lebih efisien
+    dari sisi volume dan pengolahan data
+    \item Pemrosesan dan integrasi data \\
+    Data mentah dari berbagai sumber akan melalui tahap pemrosesan seperti pembersihan nilai dan penyesuaian
+    format. Selain itu, langkah filter dan integrasi data juga dilakukan untuk mengetahui penyebab suatu \textit{grid}
+    memiliki titik api atau tidak. Hasil tapah ini adalah \textit{dataset} bulanan per \textit{grid} yang siap digunakan
+    untuk pelatihan dan evaluasi model
+    \item Pemodelan prediktif berbasis ML \\
+    \textit{Dataset} terproses akan dijadikan masukan bagi model ML agar dapat menjadi model prediktif karhutla.
+    Model ML yang digunakan adalah RF dan XGBoost agar memiliki \textit{benchmark} dan dapat menentukan model yang terbaik.
+    Model berbasis \textit{ensemble tree} sangat relevan untuk memetakan hubungan kombinasi dari faktor meteorologis,
+    biofisik, dan antropogenik. Output utama dari model ini adalah skor atau kelas (level) risiko karhutla bulanan untuk setiap 
+    \textit{grid} wilayah. Resolusi waktu prediksi bulanan ini dipilih untuk mendukung perencanaan strategis dan manajemen logistik yang 
+    secara administratif tidak bisa dilakukan dalam siklus harian. Jadi, prediksi ini melengkapi sistem harian BMKG yang bersifat taktis
+    dan operasional.
+    \item Analisis faktor menggunakan XAI \\
+    Untuk memberikan penjelasan dari hasil model, sistem menerapkan pendekatan XAI dengan memanfaatkan SHAP sebagai 
+    interpretabilitas lokal dan PFI untuk interpretabilitas global. Metode ini menghasilkan informasi kontribusi 
+    masing-masing faktor terhadap prediksi risiko sehingga memberikan penjelasan dari hasil model.
+    \item Penyajian informasi kepada pemangku kepentingan \\
+    Hasil dari model memberikan kerentanan risiko bulanan dengan level rendah, sedang, dan tinggi yang disertai dengan hasil
+    analisis XAI dan disajikan dalam bentuk peta grafik risiko. Penyajian ini bertujuan agar pemangku kepentingan seperti 
+    instansi pengelola karhutla dapat memahami hasil prediksi dan menyusun rencana mitigasi dengan lebih cepat karena 
+    dapat memanfaatkan hasil prediksi sebagai acuan dasar. Walaupun prediksi bukanlah hasil yang pasti, hasil yang diberikan
+    model tidak sekedar sebuah hasil. Namun, hasil yang diberikan disertai penjelasan sehingga analisis lanjutan mungkin 
+    tetap perlu dilakukan sebelum menyusun rencana mitigasi.
+\end{enumerate}
+
+Berdasarkan penjelasan kondisi sistem \textit{as-is} dan \textit{to-be} sebelumnya, analisis penjelasan perbandingan dilakukan sesuai
+pada Tabel \ref{tbl:perbandingan-asis-tobe}. Tabel \ref{tbl:perbandingan-asis-tobe} merangkum perbedaan utama antara sistem \textit{as-is} dan sistem \textit{to-be}.
+Secara singkat, sistem usulan tidak menggantikan mekanisme pemantauan yang sudah ada, tetapi menambahkan modul prediktif
+bulanan dan penjelasan faktor yang diharapkan dapat menjawab kebutuhan informasi yang diidentifikasi pada Bab III.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{| p{2.5cm} | p{5cm} | p{5cm} |}
+    \hline
+    Aspek & \textit{As-Is} (saat ini) & \textit{To-Be} (solusi usulan) \\
+    \hline
+    Jenis informasi utama &
+    \textit{Hotspot} dan indeks bahaya kebakaran yang menggambarkan kondisi saat ini. &
+    Level risiko karhutla bulanan per \textit{grid} yang dibangun dari data historis multi-faktor. \\
+    \hline
+    Fungsi utama &
+    Mendukung monitoring dan respon reaktif ketika bahaya sudah tinggi. &
+    Menambah dukungan untuk perencanaan mitigasi proaktif melalui peta risiko dan informasi level potensi kebakaran. \\
+    \hline
+    Pemahaman faktor penyebab &
+    Analisis faktor meteorologis, biofisik, dan antropogenik dilakukan terpisah dan bersifat kualitatif. Fokus saat ini hanya menggunakan FWI sebagai identifikasi faktor meteorologis. &
+    \textit{Explainable AI} memberikan kontribusi relatif tiap faktor terhadap risiko, baik pada tingkat lokal maupun global. \\
+    \hline
+    Bentuk penyajian &
+    Portal pemantauan dan laporan operasional. &
+    Visualisasi dalam bentuk peta risiko bulanan. \\
+    \hline
+    \end{tabular}
+    \caption{Perbandingan Ringkas Sistem \textit{As-Is} dan \textit{To-Be}}
+    \label{tbl:perbandingan-asis-tobe}
+\end{table}
+
